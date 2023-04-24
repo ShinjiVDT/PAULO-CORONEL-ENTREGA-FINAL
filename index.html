@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/script.js"></script>
+    <link rel="icon" href="./recursos/Icons/icons8-galaxia-32.png">
+    <title>Trópico Galaxia</title>
+</head>
+
+<body>
+  
+        <header class="headeri">
+            <nav>
+                <ul class="listmenu">
+                    <li class="linkfotos button" onclick="myFunction()"><a class="linkmenu" href="#">F o t o s</a></li>
+                    <li class="linkmenu marginpunto"> · </li>
+                    <li class="linkfechas"><a class="linkmenu" href="#">F e c h a s</a></li>
+                    <li class="linkmenu marginpunto"> · </li>
+                    <li class="linkbio"><a class="linkmenu" href="./paginas/bio.html">B i o</a></li>
+                    <li class="linkmenu marginpunto"> · </li>
+                    <li class="linksonidos"><a class="linkmenu" href="./paginas/sonidos.html">S o n i d o s</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="background">
+            <div class="sobre-fondo">
+
+                <main>
+                    <section class="tgportada">
+                        <h1 class="tropico">TROPICO <span class="galaxia">GALAXIA</span></h1>
+                        <h2 class="cl">c u m b i a l o o p e e a d a</h2>
+                    </section>
+                </main>
+            </div>
+        </div>
+        <footer class="foot">
+            <ul class="listfoot">
+                <li><a href="#"><img class="iconos" src="../recursos/Icons/spotify.svg" alt="iconos de Spotify"></a>
+                </li>
+    
+                <li><a href="#"><img class="iconos" src="../recursos/Icons/youtube.svg" alt="icono de Youtube"></a></li>
+                <li><a href="#"><img class="iconos" src="../recursos/Icons/instagram.svg" alt="icono de Instagram"></a>
+                </li>
+            </ul>
+        </footer>
+   
+    <script>
+        /*  function myFunction() {
+              const headeri= document.querySelector(".headeri");
+              headeri.classList.toggle("animacion-index");
+              
+              const linkmenu= document.querySelector(".linkmenu");
+              linkmenu.classList.toggle("animacion-menu");
+             
+              setTimeout(function() {
+                window.location.href = "https://www.ejemplo.com"; // dirige al enlace después de que finalice la animación
+              }, 5000);
+            }
+       */
+
+
+        function myFunction() {
+
+            const headeri = document.querySelector(".headeri");
+            headeri.classList.toggle("animacion-index");
+
+            const linkmenu = document.querySelectorAll(".linkmenu");
+            for (let i = 0; i < linkmenu.length; i++) {
+                linkmenu[i].classList.toggle("animacion-menu");
+            }
+
+            const background = document.querySelector(".background");
+            background.classList.toggle("animacion-back");
+
+
+            setTimeout(function () {
+                window.location.href = "./paginas/fotos.html"; // dirige al enlace después de que finalice la animación
+            }, 1500);
+        }
+    </script>
+</body>
+
+</html>
