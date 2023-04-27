@@ -1698,7 +1698,7 @@ a.lightbox-close {
 }
 
 .tarjetacancion {
-     margin: 20px !important;
+   /*   margin: 20px !important; */
     background: rgb(223, 206, 143);
     background: linear-gradient(171deg, rgba(223, 206, 143, .5) 0%, rgba(210, 164, 202, .5) 100%);
     backdrop-filter: blur(50px);
@@ -1845,37 +1845,78 @@ input[type=range]:focus::-ms-fill-upper {
     background: #DE9EA6;
 }
 
+.scrolltemas:hover{
+width: 600px;    
+}
 
 
 .scrolltemas:hover .cancion1 {
-    transform: translateX(-100px) rotate(0);
+    transform: translateX(-300px) rotate(0);
   }
   
   .scrolltemas:hover  .cancion2 {
-    transform: translateX(+50px) rotate(0);
+    transform: translateX(+300px) rotate(0);
   }
   
   .scrolltemas:hover .cancion3  {
     transform: translateX(0) rotate(0);
   }
-  
-
+   
+ /* 
   .cancion1:hover {
-    transform: translateX(-150px) rotate(0deg) !important;
+    transform: translateX(300) rotate(0deg) !important;
   }
   
   .cancion2:hover  {
-    transform: translateX(+100px) rotate(0deg) !important;
+    transform: translateX(0) rotate(-25deg) !important;
   }
   
   .cancion3:hover  {
-    transform: translateX(-50px) rotate(0deg) !important;
+    transform: translateX(-300) rotate(25deg) !important;
   }
-  
+    */
 
   
   .scrolltemas {
     display: grid;
-    height: 50vmax;
+    height: 380px;
     place-items: center;
   }
+
+
+
+
+  .btn-outline-danger:focus
+ { 
+    background-color: rgb(223, 71, 89); 
+  }  
+  .btn-outline-success:focus
+  { 
+     background-color:rgb(92, 184, 92); 
+   }
+
+   .btn-outline-warning:focus
+ { 
+    background-color: rgb(240, 173, 78); 
+  }
+
+  .btn-outline-danger:active{ 
+    box-shadow:
+    0 0 60px 30px #fff, 
+    0 0 100px 60px rgb(247, 0, 255), 
+    0 0 140px 90px rgb(221, 0, 255);
+  } 
+
+  .btn-outline-success:active{ 
+    box-shadow:
+    0 0 60px 30px #ffffff, 
+    0 0 100px 60px rgb(0, 255, 55), 
+    0 0 140px 90px #0ff;
+  } 
+
+  .btn-outline-warning:active{ 
+    box-shadow:
+    0 0 60px 30px #fff, 
+    0 0 100px 60px rgb(242, 255, 0), 
+    0 0 140px 90px rgb(245, 109, 24);
+  } 
