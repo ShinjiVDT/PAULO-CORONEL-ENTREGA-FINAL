@@ -1257,15 +1257,18 @@ a.lightbox-close {
     overflow-y: scroll;
     height: 400px;
     width: 70%;
-    margin-top: 80px;
-    margin-bottom: 50px;
+    margin-top:100px;
+
     scroll-behavior: smooth;
     scrollbar-width: none;
     padding-top: 80px;
     background-color: rgba(202, 141, 141, 0.256);
     backdrop-filter: blur(50px);
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 20px;
+    border: 2px solid rgba(230, 158, 158, 0.639);
 }
+
 
 
 .scrollprop {
@@ -1288,19 +1291,17 @@ a.lightbox-close {
     width: 80%;
     height: 150%;
     padding: 200px 0 200px 0;
+    
 }
 
 
 /*TEXTOBIO*/
 
 .cajabio p {
-
-
     font-family: 'Roboto Mono', monospace;
     line-height: 80px;
     text-align: center;
-    font-size: 30px;
-
+    font-size: 28px;
 }
 
 
@@ -1345,7 +1346,6 @@ a.lightbox-close {
 
 @media (max-width: 740px) {
     .bioscroll {
-
         height: 450px;
         width: 90%;
         margin-top: 50px;
@@ -1355,6 +1355,7 @@ a.lightbox-close {
 
     .cajabio {
         width: 180px;
+      
     }
 
     .cajabio p {
@@ -1363,6 +1364,7 @@ a.lightbox-close {
         text-align: center;
         font-size: 20px;
         overflow-wrap: break-word;
+        
     }
 
 
