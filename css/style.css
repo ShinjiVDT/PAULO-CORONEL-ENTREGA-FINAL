@@ -1696,3 +1696,39 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
     background: #DE9EA6;
 }
+
+
+.btn-outline-danger:focus
+{ 
+   background-color: rgb(223, 71, 89); 
+ }  
+ .btn-outline-success:focus
+ { 
+    background-color:rgb(92, 184, 92); 
+  }
+
+  .btn-outline-warning:focus
+{ 
+   background-color: rgb(240, 173, 78); 
+ }
+
+ .btn-outline-danger:active{ 
+   box-shadow:
+   0 0 60px 30px #fff, 
+   0 0 100px 60px rgb(247, 0, 255), 
+   0 0 140px 90px rgb(221, 0, 255);
+ } 
+
+ .btn-outline-success:active{ 
+   box-shadow:
+   0 0 60px 30px #ffffff, 
+   0 0 100px 60px rgb(0, 255, 55), 
+   0 0 140px 90px #0ff;
+ } 
+
+ .btn-outline-warning:active{ 
+   box-shadow:
+   0 0 60px 30px #fff, 
+   0 0 100px 60px rgb(242, 255, 0), 
+   0 0 140px 90px rgb(245, 109, 24);
+ } 
