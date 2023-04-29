@@ -1,0 +1,112 @@
+/*FLECHAS*/
+
+.flecha-derecha span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 3px solid rgba(42, 40, 40, 0.712);
+    border-right: 3px solid rgba(42, 40, 40, 0.712);
+    animation: derecha 2s infinite;
+    margin: 20px;
+}
+
+@keyframes derecha {
+    0% {
+        opacity: 0;
+        transform: rotate(315deg) translate(0px, 0px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(315deg) translate(10px, 10px);
+    }
+}
+
+
+.flecha-izquierda span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 3px solid rgba(42, 40, 40, 0.712);
+    border-right: 3px solid rgba(42, 40, 40, 0.712);
+    animation: izquierda 2s infinite;
+    margin: 20px;
+}
+
+@keyframes izquierda {
+    0% {
+        opacity: 0;
+        transform: rotate(135deg) translate(0px, 0px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(135deg) translate(10px, 10px);
+    }
+}
+
+
+.flecha-abajo span {
+    display: block;
+    position: relative;
+    top: 130px;
+    width: 20px;
+    height: 20px;
+    border-bottom: 3px solid rgba(42, 40, 40, 0.712);
+    border-right: 3px solid rgba(42, 40, 40, 0.712);
+    animation: abajo 2s infinite;
+}
+
+@keyframes abajo {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+}
+
+.flecha-arriba span {
+    display: block;
+    position: relative;
+    top: -130px;
+    width: 20px;
+    height: 20px;
+    border-bottom: 3px solid rgba(42, 40, 40, 0.712);
+    border-right: 3px solid rgba(42, 40, 40, 0.712);
+    animation: arriba 2s infinite;
+}
+
+@keyframes arriba {
+    0% {
+        opacity: 0;
+        transform: rotate(225deg) translate(0px, 0px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(225deg) translate(10px, 10px);
+    }
+}
+
+
+
