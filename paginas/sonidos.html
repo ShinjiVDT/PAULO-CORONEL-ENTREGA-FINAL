@@ -14,18 +14,17 @@
         <nav class="navbar fixed-top navbar-expand-lg  p-md-3">
             <div class="container-fluid">
                 <div class="navbar-header ">
-
-                    <button class="btn navbar-btn btn-link pull-right first-button positionhamburger"
+                    <button class="btn navbar-btn btn-link pull-right first-button hamburger--position"
                         data-target="#modalNavigation" data-toggle="modal" type="button">
-                        <div class="animated-icon1"><span class="glowhamburger"></span><span
-                                class="glowhamburger"></span><span class="glowhamburger"></span></div>
+                        <div class="animated-icon1"><span class="hamburger--glow"></span><span
+                                class="hamburger--glow"></span><span class="hamburger--glow"></span></div>
                     </button>
                 </div>
             </div>
         </nav>
-        <div id="modalNavigation" class="modal fade modal-fullscreen-menu " data-keyboard="false" data-backdrop="static"
-            role="dialog" tabindex="-1">
-            <button class="btn navbar-btn btn-link pull-right first-button positionhamburger"
+        <div id="modalNavigation" class="modal fade modal-fullscreen-menu " data-keyboard="false"
+            data-backdrop="static" role="dialog" tabindex="-1">
+            <button class=" btn navbar-btn btn-link pull-right first-button   hamburger--position myButton"
                 data-target="#modalNavigation" data-toggle="modal" type="button">
                 <div class="animated-icon1"><span></span><span></span><span></span></div>
             </button>
@@ -39,16 +38,16 @@
             </div>
         </div>
     </header>
-    <main class="fondobio">
+    <main class="fondosonido">
         <audio id="audio-player" preload="metadata" onloadedmetadata="mDur()" ontimeupdate="mPlay()" >
             <source id="audio-source" src="" type="audio/mpeg">
         </audio>
-        
-        <section class="canciones">
-            <div class="btn-group  " role="group" aria-label="Basic outlined example">
-                <button type="button" class="btn btn-outline-danger  card tarjetacancion" style="width: 18rem;"
-                    onclick="playAudio('https://docs.google.com/uc?export=open&amp;id=1dajXi59mcSpq-AP44vTVICEEVb8HLi2D')">
-                    <img class=" card-img-top imgsonidos" src="../recursos/Sonidos/trópico111.png"
+    
+            <section class="box-canciones btn-group-toggle" role="group" aria-label="Basic outlined example" >
+ 
+                <button  type="button" class="btn  btn-outline-danger card card--detalle card--translate1" id="cancion1" style="width: 18rem;" 
+                    onclick="playAudio('https://docs.google.com/uc?export=open&amp;id=1dajXi59mcSpq-AP44vTVICEEVb8HLi2D'); cancion1()">
+                    <img class="card-img-top card__imgsonidos" src="../recursos/Sonidos/trópico111.png"
                         alt="Botón de reproducción">
                     <div class="card-body">
                         <p class="card-text">Tex - Mex + Guitarrita cósmica</p>
@@ -56,39 +55,40 @@
                     
                 </button>
 
-                <button type="button" class="btn btn-outline-success  card tarjetacancion" style="width: 18rem;"
-                    onclick="playAudio('https://docs.google.com/uc?export=open&amp;id=1PGKPSMeacg1rW7AWYyYI9b0skqrpEZX4')">
-                    <img class=" card-img-top imgsonidos" src="../recursos/Sonidos/2.jpg" alt="Botón de reproducción">
+                <button   type="button" class="btn btn-outline-success card card--detalle card--translate2" id="cancion2" style="width: 18rem;"
+                    onclick="playAudio('https://docs.google.com/uc?export=open&amp;id=1PGKPSMeacg1rW7AWYyYI9b0skqrpEZX4');  cancion2()">
+                    <img class=" card-img-top card__imgsonidos" src="../recursos/Sonidos/2.jpg" alt="Botón de reproducción">
                     <div class="card-body">
                         <p class="card-text">Muerte en el Nilo</p>
                     </div>
                 </button>
 
-                <button type="button" class="btn btn-outline-warning  card tarjetacancion" style="width: 18rem;"
-                    onclick="playAudio('https://docs.google.com/uc?export=open&amp;id=1KYYJJf7Y_ZLTZCCMD6KJ988y4lwr-AfJ')"><img
-                        class="card-img-top imgsonidos" src="../recursos/Sonidos/trópico1c.png"
+                <button type="button" class="btn btn-outline-warning card card--detalle card--translate3" id="cancion3" style="width: 18rem;"
+                    onclick="playAudio('https://docs.google.com/uc?export=open&amp;id=1KYYJJf7Y_ZLTZCCMD6KJ988y4lwr-AfJ'); cancion3()"><img
+                        class="card-img-top card__imgsonidos" src="../recursos/Sonidos/trópico1c.png"
                         alt="Botón de reproducción">
                     <div class="card-body">
                         <p class="card-text">Surf en la galaxia peruana</p>
                     </div>
                 </button>
-            </div>
-        </section>
+            </section>
+     
+       
         <section class="reproductor">
-            <input class='range-slider__progress' id="dur" type="range" name="rng" min="0" step="0.25" value="1"
+            <input class='reproductor__seeker' id="dur" type="range" name="rng" min="0" step="0.25" value="1"
                 onchange="mSet()">
         </section> 
+   
     </main>
     <footer class="foot">
-        <ul class="listfoot">
-            <li><a href="#"><img class="iconos" src="../recursos/Icons/spotify.svg" alt="iconos de Spotify"></a>
+        <ul class="foot__list">
+            <li class="foot__item"><a href="#"><img class="foot__iconos" src="../recursos/Icons/spotify.svg" alt="iconos de Spotify"></a>
             </li>
-            <li><a href="#"><img class="iconos" src="../recursos/Icons/youtube.svg" alt="icono de Youtube"></a></li>
-            <li><a href="#"><img class="iconos" src="../recursos/Icons/instagram.svg" alt="icono de Instagram"></a>
+            <li class="foot__item"><a href="#"><img class="foot__iconos" src="../recursos/Icons/youtube.svg" alt="icono de Youtube"></a></li>
+            <li class="foot__item"><a href="#"><img class="foot__iconos" src="../recursos/Icons/instagram.svg" alt="icono de Instagram"></a>
             </li>
         </ul>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -127,5 +127,22 @@
         player.play();
     }
 
+    function cancion1() {
+  document.getElementById('cancion1').style.zIndex = 10;
+  document.getElementById('cancion2').style.zIndex = 1;
+  document.getElementById('cancion3').style.zIndex = 1;
+}
+
+function cancion2() {
+  document.getElementById('cancion1').style.zIndex = 1;
+  document.getElementById('cancion2').style.zIndex = 10;
+  document.getElementById('cancion3').style.zIndex = 1;
+}
+
+function cancion3() {
+  document.getElementById('cancion1').style.zIndex = 1;
+  document.getElementById('cancion2').style.zIndex = 1;
+  document.getElementById('cancion3').style.zIndex = 10;
+}
 </script>
 </body>
