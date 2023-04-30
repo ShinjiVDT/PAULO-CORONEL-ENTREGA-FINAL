@@ -196,7 +196,7 @@ p {
 
 }
 
-@keyframes gradient {
+@keyframes  gradient {
     0% {
         background-position: 0% 50%;
     }
@@ -287,7 +287,7 @@ p {
     animation-duration: 4s;
 }
 
-@keyframes tropicofadeout {
+@keyframes  tropicofadeout {
     0% {
         opacity: 0;
     }
@@ -496,7 +496,7 @@ p {
 }
 
 
-.modal-dialog {
+.modal-calendario__dialog {
     pointer-events: all !important
 }
 
@@ -505,14 +505,14 @@ p {
     padding-top: 14px;
 }
 
-.positionhamburger {
+.hamburger--position {
     position: absolute;
     top: 10px;
     left: 28px;
     padding: 0;
 }
 
-.glowhamburger {
+.hamburger--glow {
     -webkit-box-shadow: 0px 0px 74px 23px rgba(227, 168, 219, 0.65);
     -moz-box-shadow: 0px 0px 74px 23px rgba(227, 168, 219, 0.65);
     box-shadow: 0px 0px 74px 23px rgba(227, 168, 219, 0.65);
@@ -570,7 +570,7 @@ p {
 
 
 
-/*MEDIA QUERY FOOTER*/
+/*MEcalendario__dia QUERY FOOTER*/
 
 @media (max-width: 740px) {
     .foot {
@@ -595,7 +595,7 @@ p {
     margin: 20px;
 }
 
-@keyframes derecha {
+@keyframes  derecha {
     0% {
         opacity: 0;
         transform: rotate(315deg) translate(0px, 0px);
@@ -622,7 +622,7 @@ p {
     margin: 20px;
 }
 
-@keyframes izquierda {
+@keyframes  izquierda {
     0% {
         opacity: 0;
         transform: rotate(135deg) translate(0px, 0px);
@@ -650,7 +650,7 @@ p {
     animation: abajo 2s infinite;
 }
 
-@keyframes abajo {
+@keyframes  abajo {
     0% {
         opacity: 0;
         transform: rotate(45deg) translate(0px, 0px);
@@ -677,7 +677,7 @@ p {
     animation: arriba 2s infinite;
 }
 
-@keyframes arriba {
+@keyframes  arriba {
     0% {
         opacity: 0;
         transform: rotate(225deg) translate(0px, 0px);
@@ -1077,7 +1077,7 @@ a.lightbox-close {
 
 
 
-/*MEDIA QUERY FOTO*/
+/*MEcalendario__dia QUERY FOTO*/
 
 
 @media (max-width: 740px) {
@@ -1387,15 +1387,15 @@ a.lightbox-close {
 
 
 
-.glowcuadrorosafecha{
+.flyer--border{
     box-shadow: rgba(240, 46, 170, 1) 2px 2px, rgba(240, 46, 170, 0.3) 5px 5px, rgba(240, 46, 170, 0.2) 10px 10px, rgba(240, 46, 170, 0.1) 15px 15px, rgba(240, 46, 170, 0.05) 20px 20px;
 }
-.glowcuadrorosafecha:hover{
+.flyer--border:hover{
     box-shadow: rgba(240, 46, 170, 1) 1px 1px, rgba(240, 46, 170, 0.3) 4px 4px, rgba(240, 46, 170, 0.2) 9px 9px, rgba(240, 46, 170, 0.1) 14px 14px, rgba(240, 46, 170, 0.05) 19px 19px;
 
 }
 
-.heightrow
+.row--style
 {
     margin: 0;
     padding: 0;
@@ -1425,14 +1425,10 @@ a.lightbox-close {
 
 
 
-.card-fecha {
-    background-color: rgba(255, 227, 239, 1);
-    border: none;
-}
 
 
 
-.flyermapcontainer {
+.scrolling-flyer-map__content {
     background-color: transparent;
     height: 100%;
     width: 100%;
@@ -1441,11 +1437,13 @@ a.lightbox-close {
     align-items: center;
     }
 
+
+
     
 
 
 
-.scrolling-flyer {
+.scrolling-flyer-map {
     width: 100%;
     max-height: 340px;
     height: 50%;
@@ -1459,7 +1457,7 @@ a.lightbox-close {
 
 
 
-.scrolling-flyer::-webkit-scrollbar {
+.scrolling-flyer-map::-webkit-scrollbar {
 display: none;
 }
 
@@ -1528,7 +1526,7 @@ display: none;
 
 
 
-a.lightbox-close {
+.flyer-fullscreen__lightbox-close{
     margin: auto;
     position: absolute;
     top: 0;
@@ -1559,7 +1557,7 @@ a.lightbox-close {
 
 
 
-    .flyermapcontainer {
+    .scrolling-flyer-map__content {
         margin-bottom: 50px;
         flex-direction: column;
         justify-content: center;
@@ -1569,12 +1567,12 @@ a.lightbox-close {
 
 
 
-    .scrolling-flyer {
+    .scrolling-flyer-map {
     height: 60%;
     }
     
 
-    .marginmap{
+    .flyer--margin{
         margin-top: 30px;
         margin-bottom: 15px;
     }
@@ -1589,20 +1587,17 @@ a.lightbox-close {
 
 /*--calendario--*/
 
-.calendar {
+.calendario{
     margin-top: 50px;
     position: relative;
     width: 120px;
     opacity: .8;
     margin-left: 10px;
+
 }
 
 
-
-
-
-
-.calendar .boxcalendario {
+.calendario .calendario__box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1613,9 +1608,10 @@ a.lightbox-close {
     border-right: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     box-shadow: 0 5px 25px rgba(180, 133, 155, 0.15);
+
 }
 
-.calendar .boxcalendario .mes {
+.calendario .calendario__box .calendario__mes {
     color: #333030;
     background-image: linear-gradient(90deg, rgba(255, 227, 239, 1) 50px, rgb(255, 252, 194));
     width: 100%;
@@ -1627,27 +1623,28 @@ a.lightbox-close {
     border-top-right-radius: 8px;
 }
 
-.calendar .boxcalendario .dia {
+.calendario .calendario__box .calendario__dia {
     color: #333030;
     font-size: 1em;
     font-weight: 400;
     margin-top: 0px;
 }
 
-.calendar .boxcalendario .numerodia {
+.calendario .calendario__box .calendario__ndia {
     color: #333030;
     font-size: 2em;
     font-weight: 600;
     line-height: 1.2em;
+    
 }
 
-.calendar a {
+.calendario__link {
     text-decoration: none;
 }
 
 
 
-.calendar:hover {
+.calendario:hover {
     transform: translateY(-5px);
     box-shadow: none;
     opacity: 1;
