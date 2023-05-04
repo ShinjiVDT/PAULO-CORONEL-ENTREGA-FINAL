@@ -160,7 +160,8 @@ p {
 
 
 .background {
-    background-image: linear-gradient(216deg, rgba(165, 114, 119, 0.8) 0%, rgba(111, 179, 194, 0.2) 50%), url(../recursos/AFICHES-2.jpg);
+    background-image: url(../recursos/AFICHES-2.jpg);
+ 
     background-size: cover;
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -184,7 +185,7 @@ p {
 .sobre-fondo {
     height: 100vh;
     width: 100%;
-
+    background-blend-mode: exclusion;
     min-width: 100vh;
     margin: 0;
     padding: 0; 
