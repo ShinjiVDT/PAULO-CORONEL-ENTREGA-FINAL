@@ -517,7 +517,7 @@ p {
     -moz-box-shadow: 0px 0px 74px 23px rgba(227, 168, 219, 0.65);
     box-shadow: 0px 0px 74px 23px rgba(227, 168, 219, 0.65);
 }
-
+    
 
 /*---FOOTER---*/
 
@@ -722,7 +722,7 @@ p {
     display: none;
 }
 
-.scrollprop {
+.fotoscroll__scrollprop {
     scroll-snap-align: center;
 }
 
@@ -740,53 +740,53 @@ p {
 
 
 
-.grid-fotos-celeste {
+.fotoscroll__grid-fotos--celeste {
     display: grid;
     column-gap: 70px;
     row-gap: 10px;
     grid-template-columns: repeat(4, 90px);
     grid-template-rows: repeat(5, 90px);
     grid-template-areas:
-        "img5celeste img5celeste texto-celeste1 img1celeste"
-        "img5celeste img5celeste . tapaside-container-celeste"
-        ". img3celeste img4celeste img4celeste "
-        "texto-celeste2 . img4celeste img4celeste"
-        ". img2celeste texto-celeste3 vacioceleste"
+        "fotoscroll__img5--celeste fotoscroll__img5--celeste fotoscroll__texto--celeste1 fotoscroll__img1--celeste"
+        "fotoscroll__img5--celeste fotoscroll__img5--celeste . fotoscroll__tapaside"
+        ". fotoscroll__img3--celeste fotoscroll__img4--celeste fotoscroll__img4--celeste "
+        "fotoscroll__texto--celeste2 . fotoscroll__img4--celeste fotoscroll__img4--celeste"
+        ". fotoscroll__img2--celeste texto-celeste3 fotoscroll__box--vacioceleste"
 }
 
 
-.img1celeste {
-    grid-area: img1celeste;
+.fotoscroll__img1--celeste {
+    grid-area: fotoscroll__img1--celeste;
     overflow: hidden;
 
 }
 
-.img2celeste {
-    grid-area: img2celeste;
+.fotoscroll__img2--celeste {
+    grid-area: fotoscroll__img2--celeste;
     overflow: hidden;
 
 }
 
-.img3celeste {
-    grid-area: img3celeste;
+.fotoscroll__img3--celeste {
+    grid-area: fotoscroll__img3--celeste;
     overflow: hidden;
 }
 
-.img4celeste {
-    grid-area: img4celeste;
+.fotoscroll__img4--celeste {
+    grid-area: fotoscroll__img4--celeste;
     overflow: hidden;
 
 
 }
 
-.img5celeste {
-    grid-area: img5celeste;
+.fotoscroll__img5--celeste {
+    grid-area: fotoscroll__img5--celeste;
     overflow: hidden;
 }
 
 
-.tapaside-container-celeste {
-    grid-area: tapaside-container-celeste;
+.fotoscroll__tapaside {
+    grid-area: fotoscroll__tapaside;
 }
 
 .tapaside {
@@ -805,12 +805,12 @@ p {
     mix-blend-mode: normal;
 }
 
-.texto-celeste1 {
-    grid-area: texto-celeste1;
+.fotoscroll__texto--celeste1 {
+    grid-area: fotoscroll__texto--celeste1;
 }
 
-.texto-celeste2 {
-    grid-area: texto-celeste2;
+.fotoscroll__texto--celeste2 {
+    grid-area: fotoscroll__texto--celeste2;
 }
 
 .texto-celeste3 {
@@ -818,7 +818,7 @@ p {
 }
 
 
-.textobordeabajo {
+.fotoscroll__texto--bordeabajo {
     padding-top: 35px;
     border-color: rgb(218, 218, 218);
     border-width: 2px;
@@ -831,7 +831,7 @@ p {
 }
 
 
-.textobordearriba {
+.fotoscroll__texto--bordearriba {
     border-color: rgb(218, 218, 218);
     border-width: 2px;
     border-style: groove;
@@ -843,7 +843,7 @@ p {
 
 }
 
-.textosinborde {
+.fotoscroll__texto--sinborde {
     color: rgb(75, 71, 71);
     font-size: 16px;
     overflow: hidden;
@@ -852,7 +852,7 @@ p {
 
 
 
-.containervacio {
+.fotoscroll__box--vacio {
     width: 100%;
     height: 100%;
     border-color: rgb(218, 218, 218);
@@ -860,14 +860,14 @@ p {
     border-style: groove;
 }
 
-.vacioceleste {
-    grid-area: vacioceleste;
+.fotoscroll__box--vacioceleste {
+    grid-area: fotoscroll__box--vacioceleste;
 }
 
 
 
 
-.container-celeste {
+.fotoscroll__container--celeste {
     display: flex;
     background-image: linear-gradient(90deg, rgba(194, 255, 233, 1) 700px, rgba(255, 227, 239, 1));
     justify-content: center;
@@ -913,22 +913,22 @@ p {
 
 /*pantalla fotos rojo*/
 
-.grid-fotos-rojo {
+.fotoscroll__grid-fotos--rojo {
     display: grid;
     column-gap: 70px;
     row-gap: 10px;
     grid-template-columns: repeat(4, 90px);
     grid-template-rows: repeat(5, 90px);
     grid-template-areas:
-        "img1rojo img1rojo . texto-rojo1"
-        "img1rojo img1rojo img2rojo ."
-        "texto-rojo2 img3rojo img5rojo img5rojo"
-        "img7rojo texto-rojo3 img5rojo img5rojo"
-        "img4rojo vaciorojo . img6rojo"
+        "fotoscroll__img1--rojo fotoscroll__img1--rojo . fotoscroll__texto--rojo1"
+        "fotoscroll__img1--rojo fotoscroll__img1--rojo fotoscroll__img2--rojo ."
+        "fotoscroll__texto--rojo2 fotoscroll__img3--rojo fotoscroll__img5--rojo fotoscroll__img5--rojo"
+        "fotoscroll__img7--rojo fotoscroll__texto--rojo3 fotoscroll__img5--rojo fotoscroll__img5--rojo"
+        "fotoscroll__img4--rojo fotoscroll__box--vaciorojo . fotoscroll__img6--rojo"
     ;
 }
 
-.container-rojo {
+.fotoscroll__container-rojo {
     display: flex;
     background-image: linear-gradient(90deg, rgba(255, 227, 239, 1) 700px, rgb(255, 252, 194));
     justify-content: center;
@@ -939,67 +939,67 @@ p {
 }
 
 
-.grid-fotos-rojo div {
+.fotoscroll__grid-fotos--rojo div {
     overflow: hidden;
 }
 
-.img1rojo {
-    grid-area: img1rojo;
+.fotoscroll__img1--rojo {
+    grid-area: fotoscroll__img1--rojo;
 
 
 }
 
-.img2rojo {
-    grid-area: img2rojo;
+.fotoscroll__img2--rojo {
+    grid-area: fotoscroll__img2--rojo;
 }
 
-.img3rojo {
-    grid-area: img3rojo;
-
-}
-
-.img4rojo {
-    grid-area: img4rojo;
-
-
+.fotoscroll__img3--rojo {
+    grid-area: fotoscroll__img3--rojo;
 
 }
 
-.img5rojo {
-    grid-area: img5rojo;
+.fotoscroll__img4--rojo {
+    grid-area: fotoscroll__img4--rojo;
+
+
 
 }
 
-.img6rojo {
-    grid-area: img6rojo;
+.fotoscroll__img5--rojo {
+    grid-area: fotoscroll__img5--rojo;
+
 }
 
-.img7rojo {
-    grid-area: img7rojo;
+.fotoscroll__img6--rojo {
+    grid-area: fotoscroll__img6--rojo;
 }
 
-.texto-rojo1 {
-    grid-area: texto-rojo1;
+.fotoscroll__img7--rojo {
+    grid-area: fotoscroll__img7--rojo;
 }
 
-.texto-rojo2 {
-    grid-area: texto-rojo2;
+.fotoscroll__texto--rojo1 {
+    grid-area: fotoscroll__texto--rojo1;
 }
 
-.texto-rojo3 {
-    grid-area: texto-rojo3;
+.fotoscroll__texto--rojo2 {
+    grid-area: fotoscroll__texto--rojo2;
+}
+
+.fotoscroll__texto--rojo3 {
+    grid-area: fotoscroll__texto--rojo3;
 }
 
 
-.vaciorojo {
-    grid-area: vaciorojo;
+.fotoscroll__box--vaciorojo {
+    grid-area: fotoscroll__box--vaciorojo;
 }
 
 
 /**FOTOS GRANDES**/
 
 
-.foto-fullscreen {
+.foto--fullscreen {
     display: flex;
     position: fixed;
     width: 100%;
@@ -1015,7 +1015,7 @@ p {
 }
 
 
-.foto-fullscreen img {
+.foto--fullscreen img {
     width: 0%;
     height: 0%;
     padding: 0;
@@ -1024,7 +1024,7 @@ p {
 }
 
 
-.foto-fullscreen:target {
+.foto--fullscreen:target {
     opacity: 1;
     top: 0;
     bottom: 0;
@@ -1033,7 +1033,7 @@ p {
 
 }
 
-.foto-fullscreen:target img {
+.foto--fullscreen:target img {
     height: max-content;
     width: auto;
     max-width: 90%;
@@ -1127,7 +1127,7 @@ a.lightbox-close {
  
 
 
-    .grid-fotos-rojo {
+    .fotoscroll__grid-fotos--rojo {
 
         display: grid;
         overflow: hidden;
@@ -1138,14 +1138,14 @@ a.lightbox-close {
         grid-template-columns: repeat(3, 105px);
         grid-template-rows: repeat(3, 105px);
         grid-template-areas:
-            "img1rojo img2rojo img3rojo"
-            "img4rojo img5rojo img6rojo"
-            "img7rojo . ."
+            "fotoscroll__img1--rojo fotoscroll__img2--rojo fotoscroll__img3--rojo"
+            "fotoscroll__img4--rojo fotoscroll__img5--rojo fotoscroll__img6--rojo"
+            "fotoscroll__img7--rojo . ."
 
         ;
     }
 
-    .container-celeste {
+    .fotoscroll__container--celeste {
 
         align-items: center;
         align-content: center;
@@ -1156,7 +1156,7 @@ a.lightbox-close {
 
     }
 
-    .container-rojo {
+    .fotoscroll__container-rojo {
 
 
         align-items: center;
@@ -1168,7 +1168,7 @@ a.lightbox-close {
 
     }
 
-    .grid-fotos-celeste {
+    .fotoscroll__grid-fotos--celeste {
 
         display: grid;
         overflow: hidden;
@@ -1180,8 +1180,8 @@ a.lightbox-close {
         grid-template-columns: repeat(3, 105px);
         grid-template-rows: repeat(2, 105px);
         grid-template-areas:
-            "img1celeste img2celeste img3celeste"
-            "img4celeste img5celeste ."
+            "fotoscroll__img1--celeste fotoscroll__img2--celeste fotoscroll__img3--celeste"
+            "fotoscroll__img4--celeste fotoscroll__img5--celeste ."
 
         ;
     }
@@ -1198,15 +1198,15 @@ a.lightbox-close {
 
     }
 
-    .containervacio {
+    .fotoscroll__box--vacio {
         visibility: hidden;
     }
 
-    .texto-celeste1 {
+    .fotoscroll__texto--celeste1 {
         visibility: hidden;
     }
 
-    .texto-celeste2 {
+    .fotoscroll__texto--celeste2 {
         visibility: hidden;
     }
 
@@ -1214,11 +1214,11 @@ a.lightbox-close {
         visibility: hidden;
     }
 
-    .containervacioceleste1 {
+    .fotoscroll__box--fotoscroll__box--vacioceleste1 {
         visibility: hidden;
     }
 
-    .img7rojo {
+    .fotoscroll__img7--rojo {
         visibility: hidden;
     }
 
@@ -1276,7 +1276,7 @@ a.lightbox-close {
 }
 
 
-.bioscroll__cajabio--scrollprop {
+.bioscroll__cajabio--fotoscroll__scrollprop {
     scroll-snap-align: center;
 }
 

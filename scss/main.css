@@ -81,7 +81,7 @@
 }
 
 .animated-icon1 span {
-  background: #000000;
+  background: #ffffff;
 }
 
 .animated-icon1 span:nth-child(1) {
@@ -328,7 +328,7 @@
   height: 150%;
   padding: 200px 0 200px 0;
 }
-.bioscroll__cajabio--scrollprop {
+.bioscroll__cajabio--fotoscroll__scrollprop {
   scroll-snap-align: center;
 }
 
