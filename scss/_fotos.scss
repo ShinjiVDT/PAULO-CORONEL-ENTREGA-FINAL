@@ -56,11 +56,16 @@
         ". fotoscroll__img2--celeste texto-celeste3 fotoscroll__box--vacioceleste"
 }
 
+.fotoscroll__img--forma{
+    border-radius: 80px;
+background: #e0e0e0;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
 
 .fotoscroll__img1--celeste {
     grid-area: fotoscroll__img1--celeste;
     overflow: hidden;
-
 }
 
 .fotoscroll__img2--celeste {
@@ -93,18 +98,17 @@
 
 .tapaside {
     filter: grayscale(60%);
-    border-width: 1px;
-    border-style: groove;
-    border-color: black;
     width: 90px;
     height: 90px;
     transition: all .5s;
     overflow: hidden;
+    border-radius: 50px;
 }
 
 .tapaside:hover {
     filter: grayscale(0);
     mix-blend-mode: normal;
+   
 }
 
 .fotoscroll__texto--celeste1 {
@@ -130,6 +134,7 @@
     padding-right: 5px;
     color: rgb(75, 71, 71);
     overflow: hidden;
+    border-radius: 10px;
 }
 
 
@@ -142,6 +147,7 @@
     width: 90px;
     color: rgb(75, 71, 71);
     overflow: hidden;
+    border-radius: 10px;
 
 }
 
@@ -150,6 +156,7 @@
     font-size: 16px;
     overflow: hidden;
     margin-top: 30px;
+   
 }
 
 
@@ -160,6 +167,7 @@
     border-color: rgb(218, 218, 218);
     border-width: 2px;
     border-style: groove;
+    border-radius: 10px;
 }
 
 .fotoscroll__box--vacioceleste {
@@ -202,6 +210,7 @@
     object-fit: cover;
     transition: filter  2s;
     object-position: -90px 0px;
+   
    
 
 

@@ -14,3 +14,32 @@
 @import "contacto";
 @import "variables";
 
+
+
+.titulos {
+    position: absolute;
+    right: 10%;
+    top: 0;
+    font-size: 72px;
+    background: $degrade;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: movfondo;
+    animation-duration: 80s ;
+    animation-iteration-count: infinite;
+    background-position: 0%;
+    background-size: 200%;
+    }
+    @keyframes  movfondo {
+        0% {
+            background-position: 0% 0%;
+        }
+    
+        50% {
+            background-position: 100% 50%;
+        }
+    
+        100% {
+            background-position: 0% 50%;
+        }
+    }

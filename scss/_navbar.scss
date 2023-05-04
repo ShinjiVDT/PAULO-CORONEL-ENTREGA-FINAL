@@ -94,9 +94,8 @@
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
-    background: $negro;
-    box-shadow:0px 0px 10px 1px rgba(154, 118, 169, 0.76);
-    z-index: 1000;
+    background: linear-gradient(145deg, #e1bfe1, #f0f0f0);
+
 
     &:nth-child(1) {
       top: 0px;

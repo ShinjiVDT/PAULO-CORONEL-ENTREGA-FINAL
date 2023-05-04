@@ -77,9 +77,7 @@
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
-    background: #1f1d1d;
-    box-shadow: 0px 0px 10px 1px rgba(154, 118, 169, 0.76);
-    z-index: 1000; }
+    background: linear-gradient(145deg, #e1bfe1, #f0f0f0); }
     .animated-icon1 span:nth-child(1) {
       top: 0px; }
     .animated-icon1 span:nth-child(2) {
@@ -707,6 +705,11 @@ box-shadow: 0px 0px 16px 0px rgba(131,207,184,0.76);
   grid-template-rows: repeat(5, 90px);
   grid-template-areas: "fotoscroll__img5--celeste fotoscroll__img5--celeste fotoscroll__texto--celeste1 fotoscroll__img1--celeste" "fotoscroll__img5--celeste fotoscroll__img5--celeste . fotoscroll__tapaside" ". fotoscroll__img3--celeste fotoscroll__img4--celeste fotoscroll__img4--celeste " "fotoscroll__texto--celeste2 . fotoscroll__img4--celeste fotoscroll__img4--celeste" ". fotoscroll__img2--celeste texto-celeste3 fotoscroll__box--vacioceleste"; }
 
+.fotoscroll__img--forma {
+  border-radius: 80px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff; }
+
 .fotoscroll__img1--celeste {
   grid-area: fotoscroll__img1--celeste;
   overflow: hidden; }
@@ -732,13 +735,11 @@ box-shadow: 0px 0px 16px 0px rgba(131,207,184,0.76);
 
 .tapaside {
   filter: grayscale(60%);
-  border-width: 1px;
-  border-style: groove;
-  border-color: black;
   width: 90px;
   height: 90px;
   transition: all .5s;
-  overflow: hidden; }
+  overflow: hidden;
+  border-radius: 50px; }
 
 .tapaside:hover {
   filter: grayscale(0);
@@ -762,7 +763,8 @@ box-shadow: 0px 0px 16px 0px rgba(131,207,184,0.76);
   text-align: end;
   padding-right: 5px;
   color: #4b4747;
-  overflow: hidden; }
+  overflow: hidden;
+  border-radius: 10px; }
 
 .fotoscroll__texto--bordearriba {
   border-color: #dadada;
@@ -772,7 +774,8 @@ box-shadow: 0px 0px 16px 0px rgba(131,207,184,0.76);
   font-size: 16px;
   width: 90px;
   color: #4b4747;
-  overflow: hidden; }
+  overflow: hidden;
+  border-radius: 10px; }
 
 .fotoscroll__texto--sinborde {
   color: #4b4747;
@@ -785,7 +788,8 @@ box-shadow: 0px 0px 16px 0px rgba(131,207,184,0.76);
   height: 100%;
   border-color: #dadada;
   border-width: 2px;
-  border-style: groove; }
+  border-style: groove;
+  border-radius: 10px; }
 
 .fotoscroll__box--vacioceleste {
   grid-area: fotoscroll__box--vacioceleste; }
@@ -1168,3 +1172,25 @@ form.fade_in {
 a {
   color: white;
   text-decoration: none; }
+
+.titulos {
+  position: absolute;
+  right: 10%;
+  top: 0;
+  font-size: 72px;
+  background: linear-gradient(90deg, rgba(210, 153, 197, 0.585), rgba(209, 254, 254, 0.488));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-name: movfondo;
+  animation-duration: 80s;
+  animation-iteration-count: infinite;
+  background-position: 0%;
+  background-size: 200%; }
+
+@keyframes movfondo {
+  0% {
+    background-position: 0% 0%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
