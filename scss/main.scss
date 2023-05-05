@@ -18,10 +18,11 @@
 
 .titulos {
     position: absolute;
-    right: 10%;
+    right: 20px;
     top: 0;
     font-size: 72px;
     background: $degrade;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation-name: movfondo;

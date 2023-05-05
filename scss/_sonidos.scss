@@ -12,7 +12,7 @@
 
 .box-canciones {
     display: grid;
-    height: 380px;
+    height: 300px;
     place-items: center;
     margin-top: 6rem;
 
@@ -33,6 +33,7 @@
     }
 
 }
+
 
 .btn-outline-danger:focus {
     background-color: rgb(223, 71, 89);
@@ -84,10 +85,15 @@
     &__imgsonidos {
         border-radius: 10px;
         opacity: 1;
+        height: auto;
+        width: 100%;
     }
 
 }
 
+.card{
+    width: 250px !important;
+}
 
 .reproductor {
     position: relative;
