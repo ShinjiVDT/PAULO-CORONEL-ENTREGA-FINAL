@@ -44,3 +44,33 @@
             background-position: 0% 50%;
         }
     }
+
+    @media (max-width: 740px) {
+       
+.titulos {
+    position: fixed;
+    right: 5px;
+    top: 0;
+    font-size: 52px;
+    animation: fadeOutRight 40s infinite both;
+
+    }
+
+        @keyframes fadeOutRight {
+        0% {
+        opacity: .5;
+        }
+        60% {
+        opacity: 0;
+        transform: translate3d(50%, 0, 0);
+        }
+        61% {
+            opacity: 0;
+            transform: translate3d(0, 0, 0);
+            }
+            100% {
+                opacity:.5 ;
+                transform: translate3d(0, 0, 0);
+                }
+        }
+}

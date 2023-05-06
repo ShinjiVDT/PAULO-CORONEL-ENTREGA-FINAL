@@ -27,7 +27,7 @@
 
 }
 
-.bg {
+.index-bg-movi {
   position: relative;
   min-height: 500px;
   ;
@@ -48,7 +48,7 @@
   color: #000000;
 }
 
-.galaxia {
+.text-galaxia {
 
   position: absolute;
   width: 431px;
@@ -63,12 +63,14 @@
   text-align: center;
   color: #929292;
   width: 250px;
-  transform: translate(60px, -40px);
   margin-left: 20px;
   top: 220px;
   position: fixed;
 }
 
+.text-galaxia--transform{
+  transform: translate(60px, -40px);
+}
 .troprosa{
   color: transparent;
   z-index: -1;
@@ -107,7 +109,7 @@
 
 }
 
-.pantalla1 {
+.index-bg-fijo {
   
     min-height: 1000px;
     min-width: 100%;
@@ -120,7 +122,7 @@
   
   
  
-  .indexline1 {
+  .index-line-1 {
     margin-left: 20px;
     font-size: 35px;
     top: 160px;
@@ -138,7 +140,7 @@
   
   }
   
-  .indexline2 {
+  .index-line-2 {
     letter-spacing: 3px;
     margin-left: 15px;
     position: absolute;
@@ -156,7 +158,7 @@
   
   }
   
-  .indexline3 {
+  .index-line-3 {
     letter-spacing: 3px;
     position: absolute;
     font-size: 35px;
@@ -172,7 +174,7 @@
   
   }
   
-  .boxtextindex {
+  .box-text-index {
   
     height: 200px;
     position: relative;
@@ -266,10 +268,16 @@
   
   .mouse-scroll {
     position: fixed;
-    left: 50%;
-    bottom: 90px;
+   
+    bottom: 75px;
     z-index: 1;
+    animation: scroll-down 2s ease 0s infinite normal both;
+   
+    left: 50%;
+    transform: translatex(-50%);
   }
+
+  
   
   .mouse-scroll span {
     display: block;
@@ -380,7 +388,31 @@
       opacity: 1;
     }
   }
-  
+
+
+  .scroll-down {
+    position: fixed;
+    bottom: 115px;
+    left: 47%;
+    transform: translatex(-50%); 
+    animation: scroll-down 2s ease 0s infinite normal both;
+    color: #5f7480;
+   
+  }
+@keyframes scroll-down {
+  0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
   @media (max-width: 740px) {
     .modal-fullscreen-menu {
       background-color: rgba(25, 21, 22, 0.432);
@@ -396,7 +428,7 @@
       top: -50px;
     }
   
-    .boxtextindex {
+    .box-text-index {
   
       height: 300px;
       position: absolute;
@@ -408,15 +440,15 @@
   
     }
   
-    .indexline1 {
+    .index-line-1 {
       font-size: 22px;
     }
   
-    .indexline2 {
+    .index-line-2 {
       font-size: 22px;
     }
   
-    .indexline3 {
+    .index-line-3 {
       font-size: 22px;
     }
   
@@ -441,7 +473,7 @@
       visibility: hidden;
     }
   
-    .bg {
+    .index-bg-movil {
       position: relative;
       min-height: 500px;
       ;
@@ -504,3 +536,30 @@
       background: rgba(255, 255, 255, 0.6);
     }
   }
+
+  
+.titulos-index {
+  position: fixed;
+  right: 20px;
+  top: 0;
+  font-size: 72px;
+  background: linear-gradient(90deg, rgba(210, 153, 197, 0.148), rgba(209, 254, 254, 0.488));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-name: movfondo;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  background-position: 0%;
+  background-size: 400%; 
+  font-family: 'Roboto', sans-serif;
+}
+
+
+@keyframes movfondo {
+  0% {
+    background-position: 0% 0%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }

@@ -211,7 +211,11 @@
 
 
 @media (max-width: 740px) {
-
+    
+.card {
+    &--detalle {
+        box-shadow:none;
+    }}
     .reproductor {
         position: relative;
         width: 80vw;
