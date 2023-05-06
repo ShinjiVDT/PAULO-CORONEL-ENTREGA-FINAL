@@ -63,25 +63,26 @@
   text-align: center;
   color: #929292;
   width: 250px;
-
+  transform: translate(60px, -40px);
   margin-left: 20px;
-
   top: 220px;
-
   position: fixed;
+}
+
+.troprosa{
+  color: transparent;
+  z-index: -1;
 }
 
 
 
 .trop {
   background: linear-gradient(90deg, rgba(210, 153, 197, 0.885), rgba(174, 235, 235, 0.88));
-  ;
+
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   background-size: 100%;
-
 }
 
 .tropicoroboto {
