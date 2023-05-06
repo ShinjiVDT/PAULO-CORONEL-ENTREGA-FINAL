@@ -501,29 +501,10 @@
     }
   
     
-  .titulos-index {
+  .titulos--index {
     position: fixed;
-    right: 20px;
-    top: 0;
-    font-size: 72px;
-    background: linear-gradient(90deg, rgba(210, 153, 197, 0.148), rgba(209, 254, 254, 0.488));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation-name: movfondo;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    background-position: 0%;
-    background-size: 400%; 
-    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    left: -20%;
   }
   
-  
-  @keyframes movfondo {
-    0% {
-      background-position: 0% 0%; }
-    50% {
-      background-position: 100% 50%; }
-    100% {
-      background-position: 0% 50%; } }
   
