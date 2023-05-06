@@ -211,9 +211,6 @@
 
 
 @media (max-width: 740px) {
-    .box-canciones {
-        margin-top: 8rem;
-    }
 
     .reproductor {
         position: relative;
@@ -230,6 +227,7 @@
         overflow: scroll;
         scroll-behavior: smooth;
         scroll-snap-type: x mandatory;
+        background: transparent;
     }
 
     .scrollsonidos::-webkit-scrollbar {
@@ -244,6 +242,8 @@
         position: relative;
         justify-content: space-around;
         align-items: flex-start;
+        background: transparent;
+        margin-top: 8rem;
 
 
 

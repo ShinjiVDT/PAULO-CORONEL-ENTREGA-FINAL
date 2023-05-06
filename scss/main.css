@@ -189,7 +189,7 @@
   text-decoration: none;
 }
 
-/*MEcalendario__dia QUERY FOOTER*/
+/*MEDIA QUERY FOOTER*/
 @media (max-width: 740px) {
   .foot {
     height: 60px;
