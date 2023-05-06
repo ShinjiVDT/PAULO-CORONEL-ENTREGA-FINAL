@@ -11,41 +11,45 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar fixed-top navbar-expand-lg  p-md-3">
-            <div class="container-fluid">
-                <div class="navbar-header ">
-                    <button class="btn navbar-btn btn-link pull-right first-button hamburger--position"
-                        data-target="#modalNavigation" data-toggle="modal" type="button">
-                        <div class="animated-icon1"><span class="hamburger--glow"></span><span
-                                class="hamburger--glow"></span><span class="hamburger--glow"></span></div>
-                    </button>
+ 
+    <main class="fondosonido">
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg  p-md-3">
+                <div class="container-fluid">
+                    <div class="navbar-header ">
+                        <button class="btn navbar-btn btn-link pull-right first-button hamburger--position"
+                            data-target="#modalNavigation" data-toggle="modal" type="button">
+                            <div class="animated-icon1"><span class="hamburger--glow"></span><span
+                                    class="hamburger--glow"></span><span class="hamburger--glow"></span></div>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div id="modalNavigation" class="modal fade modal-fullscreen-menu " data-keyboard="false" data-backdrop="static"
+                role="dialog" tabindex="-1">
+                <button class="btn navbar-btn btn-link pull-right first-button hamburger--position"
+                    data-target="#modalNavigation" data-toggle="modal" type="button">
+                    <div class="animated-icon1"><span></span><span></span><span></span></div>
+                </button>
+                <div class="modal-menu modal-dialog ">
+                    <nav class="list-group">
+                        <a class="list-group-item" href="./fotos.html">FOTOS</a>
+                        <a class="list-group-item" href="./bio.html">BIO</a>
+                        <a class="list-group-item" href="./fechas.html">FECHAS</a>
+                        <a class="list-group-item" href="./sonidos.html">SONIDOS</a>
+                        <a class="list-group-item" href="./contacto.html">CONTACTO</a>
+                    </nav>
                 </div>
             </div>
-        </nav>
-        <div id="modalNavigation" class="modal fade modal-fullscreen-menu " data-keyboard="false" data-backdrop="static"
-            role="dialog" tabindex="-1">
-            <button class="btn navbar-btn btn-link pull-right first-button hamburger--position"
-                data-target="#modalNavigation" data-toggle="modal" type="button">
-                <div class="animated-icon1"><span></span><span></span><span></span></div>
-            </button>
-            <div class="modal-menu modal-dialog ">
-                <nav class="list-group">
-                    <a class="list-group-item" href="./fotos.html">FOTOS</a>
-                    <a class="list-group-item" href="./bio.html">BIO</a>
-                    <a class="list-group-item" href="./fechas.html">FECHAS</a>
-                    <a class="list-group-item" href="./sonidos.html">SONIDOS</a>
-                    <a class="list-group-item" href="./contacto.html">CONTACTO</a>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <h1 class="titulos">SONIDOS</h1>
-    <main class="fondosonido">
+        </header>
+        <h1 class="titulos">SONIDOS</h1>
         <audio id="audio-player" preload="metadata" onloadedmetadata="mDur()" ontimeupdate="mPlay()">
             <source id="audio-source" src="" type="audio/mpeg">
         </audio>
         <div class="scrollsonidos">
+            <div class="swipeside swipeside--sonidos-position ">
+                <img class="swipeside__img" src="../recursos/Icons/swipe.png" alt="">
+            </div>
             <section class="box-canciones btn-group-toggle" role="group" aria-label="Basic outlined example">
 
                 <button type="button" class="btn  btn-outline-danger card card--detalle card--translate1" id="cancion1"
@@ -87,7 +91,7 @@
             <input class='reproductor__seeker' id="dur" type="range" name="rng" min="0" step="0.25" value="1"
                 onchange="mSet()">
         </section>
-
+     
     </main>
     <footer class="foot">
         <ul class="foot__list">

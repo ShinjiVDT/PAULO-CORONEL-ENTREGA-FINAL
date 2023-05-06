@@ -189,10 +189,10 @@
   -moz-box-shadow: 0px 0px 10px 0px rgba(235, 132, 225, 0.56);
   box-shadow: 0px 0px 10px 0px rgba(235, 132, 225, 0.56);
 }
-.swipeside{
+.swipeside--fechas-position{ 
   visibility: hidden;
-  }
-  
+}  
+
 /*MEDIA QUERY FECHA*/
 
 @media (max-width: 740px) {
@@ -225,12 +225,12 @@
 
 
 .swipeside{
-  visibility: visible;
   &--fechas-position{
      left: 50%;
     transform: translateX(-50%) ;
     top: 160px;
     z-index: 9999;
+    visibility: visible;
 }
 }
 }
