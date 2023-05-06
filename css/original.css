@@ -186,30 +186,6 @@
   
  
   
-  .textindex1 {
-    position: relative;
-    font-size: 30px;
-  
-    color: #413d3daa;
-    box-sizing: border-box;
-    font-family: 'Roboto';
-    font-style: normal;
-    line-height: 64px;
-    font-variant: small-caps;
-    height: 43px;
-    white-space: nowrap;
-    overflow: hidden;
-  
-    left: 0;
-    right: 0;
-  
-  
-    margin: auto;
-  }
-  
-  
-  
-  
   
   
   .modal-fullscreen-menu {
