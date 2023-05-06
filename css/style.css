@@ -430,7 +430,6 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
-  overflow: hidden;
   background-image: linear-gradient(90deg, #d2be99, rgba(209, 254, 254, 0.5)); }
 
 .box-canciones {
