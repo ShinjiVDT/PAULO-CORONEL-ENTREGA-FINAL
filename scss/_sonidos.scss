@@ -5,8 +5,9 @@
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    width: auto;
+
     background-image: linear-gradient(90deg, rgba(210, 190, 153, 1), rgba(209, 254, 254, .5));
+
 }
 
 
@@ -91,7 +92,7 @@
 
 }
 
-.card{
+.card {
     width: 250px !important;
 }
 
@@ -201,6 +202,13 @@
 }
 
 
+.scrollsonidos {
+    width: 100vh;
+    overflow: visible;
+    z-index: 1;
+}
+
+
 
 @media (max-width: 740px) {
     .box-canciones {
@@ -214,7 +222,62 @@
         border-radius: 40px;
         margin: auto;
         margin-bottom: 110px;
-       
+
+    }
+
+    .scrollsonidos {
+        width: 300px;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+    }
+
+    .scrollsonidos::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .box-canciones {
+        display: flex;
+        height: 400px;
+        width: 850px;
+        position: relative;
+        justify-content: space-around;
+        align-items: flex-start;
+
+
+
+
+        &:hover {
+            width: 800px;
+        }
+
+        &:hover .card--translate1 {
+            transform: translateX(0) rotate(0);
+        }
+
+        &:hover .card--translate2 {
+            transform: translateX(0) rotate(0);
+        }
+
+        &:hover .card--translate3 {
+            transform: translateX(0) rotate(0);
+        }
+
+    }
+
+    .card--translate1 {
+        left: 0;
+    }
+
+    .card--translate2 {
+        left: 0;
+    }
+
+    .card--detalle {
+        position: relative !important;
+
+
     }
 
 }
