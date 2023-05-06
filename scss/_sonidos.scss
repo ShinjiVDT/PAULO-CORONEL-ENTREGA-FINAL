@@ -214,9 +214,8 @@
 }
 
 @media (max-width: 740px) {
-    .fondosonido {
-        height: calc(100% - 60px);
-    }
+    
+
 .card {
     &--detalle {
         box-shadow:none;
@@ -232,8 +231,11 @@
     }
 
     .scrollsonidos {
+        margin-top: 120px;
         width: 300px;
-        overflow: scroll;
+        height: 350px;
+        overflow-x: scroll;
+        overflow-y: hidden;
         scroll-behavior: smooth;
         scroll-snap-type: x mandatory;
         background: transparent;
@@ -252,12 +254,7 @@
         justify-content: space-around;
         align-items: flex-start;
         background: transparent;
-        
-        margin-top: 8rem;
-
-
-
-
+        margin-top: 0;
         &:hover {
             width: 800px;
         }
