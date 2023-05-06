@@ -1,9 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto Mono', monospace;
 }
 
-@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;800&family=Roboto+Mono:wght@100;300;400;500;700&family=Roboto+Slab:wght@200;300;400&family=Roboto:wght@100;300;400&display=swap');
+git add@import "variables";
 @import "recursos-comunes"; 
 @import "flechas";
 @import "navbar";
