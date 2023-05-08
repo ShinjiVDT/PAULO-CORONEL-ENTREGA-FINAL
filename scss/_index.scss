@@ -110,7 +110,7 @@
     
    
     .index-line-1 {
-      margin-left: 20px;
+      margin-left: 5px;
       font-size: 35px;
       top: 160px;
       box-sizing: border-box;
@@ -207,7 +207,7 @@
     }
     
     .modal-fullscreen-menu--index .list-group a:hover {
-      color: black;
+      color: map-get($colors, "negro");
     }
     
     
@@ -399,30 +399,7 @@
         top: -50px;
       }
     
-      .box-text-index {
-    
-        height: 300px;
-        position: absolute;
-        width: 300px;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin: auto;
-    
-      }
-    
-      .index-line-1 {
-        font-size: 22px;
-      }
-    
-      .index-line-2 {
-        font-size: 22px;
-      }
-    
-      .index-line-3 {
-        font-size: 22px;
-      }
-    
+      
     
       .rectanglerosa {
         top: 20px;

@@ -46,7 +46,7 @@
       }
 
       &:hover {
-        color: black;
+        color: map-get($colors, "negro");
 
         &:before {
           transform: translate3d(0, 0, 0);
@@ -62,6 +62,7 @@
 }
 
 .animated-icon1 {
+  
   width: 20px;
   height: 20px;
   position: relative;
@@ -94,7 +95,7 @@
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
-    background: linear-gradient(145deg, #e1bfe1, #f0f0f0);
+    background:  rgba(255, 255, 255, 0.719);
 
 
     &:nth-child(1) {
@@ -161,6 +162,7 @@
   left: 28px;
   padding: 0;
   padding-top: 0px;
+ 
 }
 
 

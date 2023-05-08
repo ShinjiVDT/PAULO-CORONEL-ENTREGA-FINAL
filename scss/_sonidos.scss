@@ -1,6 +1,6 @@
 /*---SONIDOS---*/
 .fondosonido {
-    
+
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -12,14 +12,16 @@
 }
 
 
+
 .box-canciones {
     display: grid;
     height: 300px;
-    place-items: center;
-    margin-top: 6rem;
+    width: 0;
+    margin: 20% calc(50% - 150px);
 
     &:hover {
-        width: 600px;
+        width: 100%;
+
     }
 
     &:hover .card--translate1 {
@@ -73,6 +75,9 @@
 
 
 .card {
+    width: 224px;
+    height: 350px;
+
     &--detalle {
         /*     margin: 50px !important; */
         background: rgb(223, 206, 143);
@@ -82,6 +87,7 @@
         position: absolute;
         transition: .3s ease-in-out;
         cursor: pointer;
+
     }
 
     &__imgsonidos {
@@ -93,9 +99,6 @@
 
 }
 
-.card {
-    width: 250px !important;
-}
 
 .reproductor {
     position: relative;
@@ -113,6 +116,7 @@
         padding: 20px;
         height: 52px;
         border-radius: 40px;
+        background-color: #f8f5f5;
 
         &:focus {
             outline: none;
@@ -123,10 +127,12 @@
             height: 16px;
             cursor: pointer;
             box-shadow: 0px 0px 0px #000000;
-            background: #DE9EA6;
+            background: map-get($colors, "principal");
             border-radius: 25px;
             border: 1px solid #8A8A8A;
         }
+
+
 
         &::-webkit-slider-thumb {
             box-shadow: 1px 1px 2px #A6A6A6;
@@ -141,7 +147,8 @@
         }
 
         &:focus::-webkit-slider-runnable-track {
-            background: #DE9EA6;
+            background: map-get($colors, "principal");
+            ;
         }
 
         &::-moz-range-track {
@@ -149,7 +156,8 @@
             height: 16px;
             cursor: pointer;
             box-shadow: 0px 0px 0px #000000;
-            background: #DE9EA6;
+            background: map-get($colors, "principal");
+            ;
             border-radius: 25px;
             border: 1px solid #8A8A8A;
         }
@@ -175,7 +183,8 @@
 
         &::-ms-fill-lower,
         &::-ms-fill-upper {
-            background: #DE9EA6;
+            background: map-get($colors, "principal");
+            ;
             border: 1px solid #8A8A8A;
             border-radius: 50px;
             box-shadow: 0px 0px 0px #000000;
@@ -196,7 +205,8 @@
 
             &::-ms-fill-lower,
             &::-ms-fill-upper {
-                background: #DE9EA6;
+                background: map-get($colors, "principal");
+                ;
             }
         }
     }
@@ -207,19 +217,23 @@
     width: 100vh;
     overflow: visible;
     z-index: 1;
+    height: 400px;
 }
 
-.swipeside--sonidos-position{
+.swipeside--sonidos-position {
     visibility: hidden;
 }
 
 @media (max-width: 740px) {
-    
 
-.card {
-    &--detalle {
-        box-shadow:none;
-    }}
+
+    .card {
+
+        &--detalle {
+            box-shadow: none;
+        }
+    }
+
     .reproductor {
         position: relative;
         width: 80vw;
@@ -232,8 +246,8 @@
 
     .scrollsonidos {
         margin-top: 120px;
-        width: 300px;
-        height: 350px;
+        width: 340px;
+        height: 400px;
         overflow-x: scroll;
         overflow-y: hidden;
         scroll-behavior: smooth;
@@ -255,6 +269,7 @@
         align-items: flex-start;
         background: transparent;
         margin-top: 0;
+
         &:hover {
             width: 800px;
         }
@@ -287,17 +302,16 @@
 
     }
 
-    .swipeside{
-        &--sonidos-position{
-           left: 40%;
-          transform: translateX(-50%) ;
-          top: 450px;
-          z-index: 9999;
-          visibility: visible;
-      }
-    
-      }
+    .swipeside {
+        &--sonidos-position {
+            left: calc(50% - 17px);
+            top: 450px;
+            z-index: 9999;
+            visibility: visible;
+        }
+
+    }
 
 
-  
+
 }
