@@ -79,9 +79,9 @@
   }
   
   .containerfotoindex {
-    top: 25%;
+    top: 28%;
     position: absolute;
-    width: 600px;
+    width: 700px;
     left: 0;
     right: 0;
     margin: auto;
@@ -359,7 +359,7 @@
       color: #5f7480;
       &--index-position{
         bottom: 115px;
-        left: calc(50% - 40px);
+        left: calc(50% - 52px);
       }
     }
   @keyframes scroll-down {
@@ -376,6 +376,11 @@
       }
   }
   
+  .titulos--index {
+    position: fixed;
+    white-space: nowrap;
+    
+  }
     @media (max-width: 740px) {
 
       .titulos--index {
