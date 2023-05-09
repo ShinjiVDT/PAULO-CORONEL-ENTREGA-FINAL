@@ -1455,14 +1455,14 @@ a.lightbox-close {
     grid-template-rows: repeat(3, 105px);
     grid-template-areas: "fotoscroll__img1--rojo fotoscroll__img2--rojo fotoscroll__img3--rojo" "fotoscroll__img4--rojo fotoscroll__img5--rojo fotoscroll__img6--rojo" "fotoscroll__img7--rojo . ."; }
   .fotoscroll__container--celeste {
-    padding-bottom: 250px;
+    padding-bottom: 60%;
     align-items: center;
     align-content: center;
     flex-direction: column;
     justify-content: flex-end;
     background-image: linear-gradient(90deg, rgba(194, 255, 233, 0.4) 50%, rgba(255, 227, 239, 0.8)); }
   .fotoscroll__container--rojo {
-    padding-bottom: 250px;
+    padding-bottom: 60%;
     align-items: center;
     align-content: center;
     flex-direction: column;
@@ -1503,7 +1503,7 @@ a.lightbox-close {
 
 .wrapper {
   width: 100%;
-  height: 100vh;
+  height: 100svh;
   background-image: linear-gradient(90deg, rgba(210, 190, 153, 0.785), rgba(209, 254, 254, 0.388));
   overflow: hidden; }
 
@@ -1513,14 +1513,8 @@ a.lightbox-close {
   align-items: center;
   flex-direction: column; }
 
-.box {
-  position: absolute;
-  background-color: #242425;
-  height: 50px;
-  width: 50px;
-  transition: 0.2s; }
-
 form {
+  top: 20%;
   position: absolute;
   padding: 30px 20px;
   width: 320px;

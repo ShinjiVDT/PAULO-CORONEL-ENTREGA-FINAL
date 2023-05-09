@@ -3,9 +3,7 @@
     display: none;
 }
 
-.bgfotos {
 
-}
 
 .fotoscroll {
     margin: auto;
@@ -447,7 +445,8 @@ a.lightbox-close {
     }
 
     .fotoscroll__container--celeste {
-        padding-bottom: 250px;
+        padding-bottom: 60%;
+    
         align-items: center;
         align-content: center;
         flex-direction: column;
@@ -458,7 +457,7 @@ a.lightbox-close {
 
     .fotoscroll__container--rojo {
 
-        padding-bottom: 250px;
+        padding-bottom: 60%;
         align-items: center;
         align-content: center;
         flex-direction: column;
@@ -469,7 +468,7 @@ a.lightbox-close {
     }
 
     .fotoscroll__grid-fotos--celeste {
-
+      
         display: grid;
         overflow: hidden;
         object-fit: fill;
