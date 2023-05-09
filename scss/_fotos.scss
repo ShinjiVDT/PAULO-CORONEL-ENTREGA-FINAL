@@ -1,4 +1,11 @@
 /***FOTOS***/
+
+
+.bg-fotos{
+    @include sizes (100svh, 100%);
+}
+
+
 .titulofecha {
     display: none;
 }
@@ -177,7 +184,7 @@ box-shadow:  20px 20px 60px #bebebe,
 
 .fotoscroll__container--celeste {
     display: flex;
-    background-image: linear-gradient(90deg, rgba(194, 255, 233, 1) 700px, rgba(255, 227, 239, 1));
+  background-image: linear-gradient(90deg, map-get($colors, "celeste")80%, rgba(210, 190, 153, 0.485));
     justify-content: center;
     align-items: center;
     min-width: 100%;
@@ -239,7 +246,8 @@ box-shadow:  20px 20px 60px #bebebe,
 
 .fotoscroll__container--rojo {
     display: flex;
-    background-image: linear-gradient(90deg, rgba(255, 227, 239, 1) 700px, rgb(255, 252, 194));
+    background-image: linear-gradient(90deg, rgba(210, 190, 153, 0.485) 70%, rgb(255, 252, 194));
+    
     justify-content: center;
     align-items: center;
     min-width: 100%;
@@ -446,13 +454,15 @@ a.lightbox-close {
 
     .fotoscroll__container--celeste {
         padding-bottom: 60%;
-    
+        background-image: none;
+        background-color:  map-get($colors, "celeste");
         align-items: center;
         align-content: center;
         flex-direction: column;
         justify-content: flex-end;
     
-        background-image: linear-gradient(90deg, rgba(194, 255, 233, .4) 50%, rgba(255, 227, 239, .8));
+      
+        ;
     }
 
     .fotoscroll__container--rojo {
@@ -462,7 +472,8 @@ a.lightbox-close {
         align-content: center;
         flex-direction: column;
         justify-content: flex-end;
-        background-image: linear-gradient(90deg, rgba(255, 227, 239, .8) 50%, rgba(255, 252, 194, 0.604) );
+        background-image: none;
+        background:  rgba(210, 190, 153, 0.485) ;
 
 
     }
