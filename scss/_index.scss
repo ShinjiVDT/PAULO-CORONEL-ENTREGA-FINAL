@@ -20,6 +20,7 @@
     ;
     min-width: 100vh;
     background-image: linear-gradient(0deg, rgba(210, 153, 202, 0) 5%, rgba(209, 254, 254, 1)100%, rgb(109, 216, 207));
+ 
   }
   
   .tropico {
@@ -105,6 +106,8 @@
       background: -moz-linear-gradient(90deg, hsla(334, 100%, 95%, 1) 80%, hsla(180, 96%, 91%, .5) 100%);
       background: -webkit-linear-gradient(90deg, hsla(334, 100%, 95%, 1) 80%, hsla(180, 96%, 91%, .5) 100%);
       z-index: -1;
+
+   
     }
     
     
@@ -178,6 +181,7 @@
     .modal-fullscreen-menu--index {
       backdrop-filter: grayscale(90%);
       background-color: rgba(25, 21, 22, 0.832);
+    
     }
     
     .modal-fullscreen-menu--index .list-group {
@@ -195,7 +199,7 @@
       border: none;
       transition: all 0.25s ease;
       background-color: transparent;
-      background-image: linear-gradient(90deg, rgba(210, 153, 197, 0.585), rgba(209, 254, 254, 0.488));
+      background-image: linear-gradient(90deg, rgba(210, 153, 197, 0.285), rgba(209, 254, 254, 0.188));
       backdrop-filter: blur 5px;
       color: white;
       padding: 7.5vh 0;
@@ -368,7 +372,7 @@
       }
   
       50% {
-          opacity: 0.2;
+          opacity: 0.7;
       }
   
       100% {

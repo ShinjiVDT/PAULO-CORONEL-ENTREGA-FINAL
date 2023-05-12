@@ -3,6 +3,7 @@
 
 .bg-fotos{
     @include sizes (100svh, 100%);
+
 }
 
 
@@ -22,6 +23,7 @@
     width: 100%;
     scrollbar-width: none;
     scroll-behavior: smooth;
+   
 
 }
 
@@ -42,9 +44,17 @@
 
 .textglow{
     text-shadow: 2px 2px 0 #bcbcbc, 1px 1px 0 #9c9c9c;
+   
 }
 
+.fotoscroll__img--forma:hover{
+    animation-play-state:paused;
+ 
+}
 
+.tapaside:hover{
+    animation-play-state:paused;
+}
 
 
 .fotoscroll__grid-fotos--celeste {
@@ -64,40 +74,69 @@
 .fotoscroll__img--forma{
 border-radius: 10px;
 background: transparent;
-
 }
+
+.fotoscroll__texto--animacion1{
+    animation: orbita1 5s linear infinite;
+}
+
+.fotoscroll__texto--animacion2{
+    animation: orbita2 28s linear infinite;
+}
+
+
+.fotoscroll__texto--animacion3{
+    animation: orbita3 30s linear infinite;
+}
+
 
 .fotoscroll__img1--celeste {
     grid-area: fotoscroll__img1--celeste;
     overflow: hidden;
+    animation: orbita1 20s linear infinite;
+
+   
 }
+
+
 
 .fotoscroll__img2--celeste {
     grid-area: fotoscroll__img2--celeste;
     overflow: hidden;
+    animation: orbita2 25s linear infinite;
+  ;
 
 }
 
 .fotoscroll__img3--celeste {
     grid-area: fotoscroll__img3--celeste;
     overflow: hidden;
+    animation: orbita1 15s linear infinite;
+   ;
 }
 
 .fotoscroll__img4--celeste {
     grid-area: fotoscroll__img4--celeste;
     overflow: hidden;
-
-
+    animation: orbita1 20s linear infinite;
 }
+
 
 .fotoscroll__img5--celeste {
     grid-area: fotoscroll__img5--celeste;
     overflow: hidden;
+    animation: orbita4 25s linear infinite;
+   
 }
 
 
 .fotoscroll__tapaside {
     grid-area: fotoscroll__tapaside;
+    animation: orbita3 12s linear infinite;
+}
+
+.fotoscroll__img7--celeste { 
+    overflow: visible;
 }
 
 .tapaside {
@@ -107,6 +146,7 @@ background: transparent;
     transition: all .5s;
     overflow: hidden;
     border-radius: 50px;
+   
 }
 
 .tapaside:hover {
@@ -117,10 +157,12 @@ background: transparent;
 
 .fotoscroll__texto--celeste1 {
     grid-area: fotoscroll__texto--celeste1;
+   
 }
 
 .fotoscroll__texto--celeste2 {
     grid-area: fotoscroll__texto--celeste2;
+  
 }
 
 .texto-celeste3 {
@@ -130,9 +172,9 @@ background: transparent;
 
 .fotoscroll__texto--bordeabajo {
     padding-top: 35px;
-    border-color: rgb(218, 218, 218);
+ /*    border-color: rgb(218, 218, 218);
     border-width: 2px;
-    border-style: groove;
+    border-style: groove; */
     font-size: 16px;
     text-align: end;
     padding-right: 5px;
@@ -143,22 +185,20 @@ background: transparent;
 
 
 .fotoscroll__texto--bordearriba {
-    border-color: rgb(218, 218, 218);
+/*     border-color: rgb(218, 218, 218);
     border-width: 2px;
-    border-style: groove;
+    border-style: groove; */
     padding-left: 5px;
     font-size: 16px;
     width: 90px;
     color: rgb(75, 71, 71);
     overflow: hidden;
     border-radius: 10px;
-
 }
 
 .fotoscroll__texto--sinborde {
     color: rgb(75, 71, 71);
     font-size: 16px;
-    overflow: hidden;
     margin-top: 30px;
    
 }
@@ -168,20 +208,22 @@ background: transparent;
 .fotoscroll__box--vacio {
     width: 100%;
     height: 100%;
-    border-color: rgb(218, 218, 218);
+/*     border-color: rgb(218, 218, 218);
     border-width: 2px;
-    border-style: groove;
+    border-style: groove; */
     border-radius: 10px;
 }
 
 .fotoscroll__box--vacioceleste {
     grid-area: fotoscroll__box--vacioceleste;
+
 }
 
 
 
 
 .fotoscroll__container--celeste {
+  
     display: flex;
   background-image: linear-gradient(90deg, map-get($colors, "celeste")80%, rgba(210, 190, 153, 0.485));
     justify-content: center;
@@ -204,6 +246,7 @@ background: transparent;
 .tapa:hover {
     filter: grayscale(0);
     mix-blend-mode: normal;
+    
 }
 
 .thumb {
@@ -214,7 +257,7 @@ background: transparent;
     object-fit: cover;
     transition: filter  2s;
     object-position: -90px 0px;
-   
+
    
 
 
@@ -223,6 +266,7 @@ background: transparent;
 
 .thumb:hover {
     filter: grayscale(0);
+    
 }
 
 
@@ -238,8 +282,8 @@ background: transparent;
         "fotoscroll__img1--rojo fotoscroll__img1--rojo . fotoscroll__texto--rojo1"
         "fotoscroll__img1--rojo fotoscroll__img1--rojo fotoscroll__img2--rojo ."
         "fotoscroll__texto--rojo2 fotoscroll__img3--rojo fotoscroll__img5--rojo fotoscroll__img5--rojo"
-        "fotoscroll__img7--rojo fotoscroll__texto--rojo3 fotoscroll__img5--rojo fotoscroll__img5--rojo"
-        "fotoscroll__img4--rojo fotoscroll__box--vaciorojo . fotoscroll__img6--rojo"
+        ". fotoscroll__texto--rojo3 fotoscroll__img5--rojo fotoscroll__img5--rojo"
+        "fotoscroll__img4--rojo fotoscroll__box--vaciorojo fotoscroll__img7--rojo fotoscroll__img6--rojo"
     ;
 }
 
@@ -255,55 +299,68 @@ background: transparent;
 }
 
 
-.fotoscroll__grid-fotos--rojo div {
-    overflow: hidden;
-}
+
 
 .fotoscroll__img1--rojo {
     grid-area: fotoscroll__img1--rojo;
-
+    overflow: hidden;
+    animation: orbita2 20s linear infinite;
 
 }
 
 .fotoscroll__img2--rojo {
     grid-area: fotoscroll__img2--rojo;
+    overflow: hidden;
+    animation: orbita4 30s linear infinite;
 }
 
 .fotoscroll__img3--rojo {
     grid-area: fotoscroll__img3--rojo;
+    overflow: hidden;
+    animation: orbita1 18s linear infinite;
 
 }
 
 .fotoscroll__img4--rojo {
     grid-area: fotoscroll__img4--rojo;
-
-
+    overflow: hidden;
+    animation: orbita2 20s linear infinite;
 
 }
 
 .fotoscroll__img5--rojo {
     grid-area: fotoscroll__img5--rojo;
-
+    overflow: hidden;
+    animation: orbita1 28s linear infinite;
 }
 
 .fotoscroll__img6--rojo {
     grid-area: fotoscroll__img6--rojo;
+    overflow: hidden;
+    animation: orbita2 25s linear infinite;
 }
 
 .fotoscroll__img7--rojo {
     grid-area: fotoscroll__img7--rojo;
+
+    animation: orbita1 12s linear infinite;
 }
 
 .fotoscroll__texto--rojo1 {
     grid-area: fotoscroll__texto--rojo1;
+
 }
 
 .fotoscroll__texto--rojo2 {
     grid-area: fotoscroll__texto--rojo2;
+    animation: orbita1 25s linear infinite; 
+
+
 }
 
 .fotoscroll__texto--rojo3 {
     grid-area: fotoscroll__texto--rojo3;
+ 
 }
 
 
@@ -540,3 +597,82 @@ a.lightbox-close {
 
 
 
+
+
+@media all and (min-width:740px) {
+
+@keyframes orbita1 {
+from { transform: rotate(0) translateX(5px) rotate(0) ; }
+to   { transform: rotate(360deg) translateX(5px) rotate(-360deg) ; }
+}
+
+
+
+@keyframes orbita2 {
+    0% { transform: rotate(0) translateX(4px) rotate(0); }
+    to   { transform: rotate(-360deg) translateX(4px) rotate(360deg); }
+    }
+
+
+    @keyframes orbita3  {
+        from { transform: rotate(0deg) translateX(2px) rotate(0deg); }
+        to   { transform: rotate(360deg) translateX(2px) rotate(-360deg); }
+        }
+
+    @keyframes orbita4 {
+        0% {
+            transform: translate(0);
+        }
+    
+        10% {
+            transform: translate(-2px, -2px);
+        }
+    
+        20% {
+            transform: translate(2px, -2px);
+        }
+    
+        30% {
+            transform: translate(-2px, 2px);
+        }
+    
+        40% {
+            transform: translate(2px, 2px);
+        }
+    
+        50% {
+            transform: translate(-2px, -2px);
+        }
+    
+        60% {
+            transform: translate(2px, -2px);
+        }
+    
+        70% {
+            transform: translate(-2px, 2px);
+        }
+    
+        80% {
+            transform: translate(-2px, -2px);
+        }
+    
+        90% {
+            transform: translate(2px, -2px);
+        }
+    
+        100% {
+            transform: translate(0);
+        }
+    }
+
+    @keyframes orbita5 {
+        from { -webkit-transform: rotate(0deg) translateX(5px) translateY(120px) rotate(0deg);}
+        to   { -webkit-transform: rotate(360deg) translateX(5px) translateY(120px) rotate(-360deg); }
+  }
+
+
+
+
+
+    @keyframes bounce-in-left{0%{transform:translateX(-600px);animation-timing-function:ease-in;opacity:0}38%{transform:translateX(0);animation-timing-function:ease-out;opacity:1}55%{transform:translateX(-68px);animation-timing-function:ease-in}72%{transform:translateX(0);animation-timing-function:ease-out}81%{transform:translateX(-28px);animation-timing-function:ease-in}90%{transform:translateX(0);animation-timing-function:ease-out}95%{transform:translateX(-8px);animation-timing-function:ease-in}100%{transform:translateX(0);animation-timing-function:ease-out}}
+}

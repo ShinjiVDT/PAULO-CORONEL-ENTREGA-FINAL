@@ -72,6 +72,8 @@
   margin: 0px 40px;
   border-radius: 20px;
 
+
+
   &:hover {
     transform: translate(1px, 1px);
   }
@@ -221,7 +223,7 @@
   .row--style {
     padding: 50px auto 50px auto;
     height: 85%;
-    width: 65%;
+    width: 75%;
    background: map-get($colors, "celeste");
    border-radius: 15px;
    box-shadow:none;
@@ -238,6 +240,7 @@
     scrollbar-width: none;
     scroll-behavior: smooth;
     scroll-snap-align: center;
+   
   }
 
   .scrolling-flyer-map__content {
@@ -245,6 +248,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
   }
 
   .flyer--margin {
