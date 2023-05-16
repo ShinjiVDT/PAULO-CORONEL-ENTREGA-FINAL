@@ -694,7 +694,8 @@
   .tropmobile {
     font-size: 60px; }
   .desktop {
-    visibility: hidden; }
+    visibility: hidden;
+    display: none; }
   .index-bg-movil {
     position: relative;
     min-height: 500px;
@@ -1048,6 +1049,24 @@
     box-shadow: 0px 0px 10px 0px rgba(235, 132, 225, 0.56); }
 
 /*flyer grandes*/
+#f1:not(:target) {
+  display: none; }
+
+#f1:target {
+  display: block; }
+
+#f2:not(:target) {
+  display: none; }
+
+#f2:target {
+  display: block; }
+
+#f3:not(:target) {
+  display: none; }
+
+#f3:target {
+  display: block; }
+
 .flyer-fullscreen {
   display: flex;
   position: fixed;
@@ -1098,7 +1117,8 @@
   position: relative;
   width: 120px;
   opacity: .8;
-  margin-left: 10px; }
+  margin-left: 10px;
+  animation: bounce2 2s ease forwards; }
   .calendario .calendario__box {
     display: flex;
     justify-content: center;
@@ -1131,8 +1151,25 @@
       font-weight: 600;
       line-height: 1.2em; }
 
+@keyframes bounce2 {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-30px); }
+  60% {
+    transform: translateY(-15px); } }
+
 .calendario__link {
   text-decoration: none; }
+
+.calendario--animacion2 {
+  animation-delay: .2s; }
+
+.calendario--animacion3 {
+  animation-delay: .3s; }
+
+.calendario--animacion4 {
+  animation-delay: .4s; }
 
 .calendario:hover {
   transform: translateY(2px);
@@ -1147,7 +1184,7 @@
 /*MEDIA QUERY FECHA*/
 @media (max-width: 740px) {
   .scrolling-num {
-    width: 65%;
+    width: 75%;
     height: 150px;
     margin-top: 30px;
     margin-bottom: 0px;
@@ -1217,6 +1254,12 @@
 .fotoscroll__scrollprop {
   scroll-snap-align: center; }
 
+.box-fotos {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row; }
+
 .glowcuadrorosa {
   box-shadow: rgba(240, 46, 170, 0.4) 2px 2px, rgba(240, 46, 170, 0.3) 5px 5px, rgba(240, 46, 170, 0.2) 10px 10px, rgba(240, 46, 170, 0.1) 15px 15px, rgba(240, 46, 170, 0.05) 20px 20px; }
 
@@ -1235,24 +1278,20 @@
   row-gap: 10px;
   grid-template-columns: repeat(4, 90px);
   grid-template-rows: repeat(5, 90px);
-  grid-template-areas: "fotoscroll__img5--celeste fotoscroll__img5--celeste fotoscroll__texto--celeste1 fotoscroll__img1--celeste"
- "fotoscroll__img5--celeste fotoscroll__img5--celeste . fotoscroll__tapaside"
- ". fotoscroll__img3--celeste fotoscroll__img4--celeste fotoscroll__img4--celeste "
- "fotoscroll__texto--celeste2 . fotoscroll__img4--celeste fotoscroll__img4--celeste"
- ". fotoscroll__img2--celeste texto-celeste3 fotoscroll__box--vacioceleste"; }
+  grid-template-areas: "fotoscroll__img5--celeste fotoscroll__img5--celeste fotoscroll__texto--celeste1 fotoscroll__img1--celeste" "fotoscroll__img5--celeste fotoscroll__img5--celeste . fotoscroll__tapaside" ". fotoscroll__img3--celeste fotoscroll__img4--celeste fotoscroll__img4--celeste " "fotoscroll__texto--celeste2 . fotoscroll__img4--celeste fotoscroll__img4--celeste" ". fotoscroll__img2--celeste texto-celeste3 fotoscroll__box--vacioceleste"; }
 
 .fotoscroll__img--forma {
   border-radius: 10px;
   background: transparent; }
 
 .fotoscroll__texto--animacion1 {
-  animation: orbita1 28s linear infinite; }
+  animation: orbita1 5s linear infinite; }
 
 .fotoscroll__texto--animacion2 {
-  animation: orbita4 28s linear infinite; }
+  animation: orbita2 28s linear infinite; }
 
 .fotoscroll__texto--animacion3 {
-  animation: orbita3 20s linear infinite; }
+  animation: orbita3 30s linear infinite; }
 
 .fotoscroll__img1--celeste {
   grid-area: fotoscroll__img1--celeste;
@@ -1384,11 +1423,7 @@
   row-gap: 10px;
   grid-template-columns: repeat(4, 90px);
   grid-template-rows: repeat(5, 90px);
-  grid-template-areas: "fotoscroll__img1--rojo fotoscroll__img1--rojo . fotoscroll__texto--rojo1"
- "fotoscroll__img1--rojo fotoscroll__img1--rojo fotoscroll__img2--rojo ."
- "fotoscroll__texto--rojo2 fotoscroll__img3--rojo fotoscroll__img5--rojo fotoscroll__img5--rojo"
- ". fotoscroll__texto--rojo3 fotoscroll__img5--rojo fotoscroll__img5--rojo"
- "fotoscroll__img4--rojo fotoscroll__box--vaciorojo fotoscroll__img7--rojo fotoscroll__img6--rojo"; }
+  grid-template-areas: "fotoscroll__img1--rojo fotoscroll__img1--rojo . fotoscroll__texto--rojo1" "fotoscroll__img1--rojo fotoscroll__img1--rojo fotoscroll__img2--rojo ." "fotoscroll__texto--rojo2 fotoscroll__img3--rojo fotoscroll__img5--rojo fotoscroll__img5--rojo" ". fotoscroll__texto--rojo3 fotoscroll__img5--rojo fotoscroll__img5--rojo" "fotoscroll__img4--rojo fotoscroll__box--vaciorojo fotoscroll__img7--rojo fotoscroll__img6--rojo"; }
 
 .fotoscroll__container--rojo {
   display: flex;
@@ -1531,11 +1566,8 @@ a.lightbox-close {
     row-gap: 1px;
     grid-template-columns: repeat(3, 105px);
     grid-template-rows: repeat(3, 105px);
-    grid-template-areas: "fotoscroll__img1--rojo fotoscroll__img2--rojo fotoscroll__img3--rojo"
- "fotoscroll__img4--rojo fotoscroll__img5--rojo fotoscroll__img6--rojo"
- "fotoscroll__img7--rojo . ."; }
+    grid-template-areas: "fotoscroll__img1--rojo fotoscroll__img2--rojo fotoscroll__img3--rojo" "fotoscroll__img4--rojo fotoscroll__img5--rojo fotoscroll__img6--rojo" "fotoscroll__img7--rojo . ."; }
   .fotoscroll__container--celeste {
-    padding-bottom: 60%;
     background-image: none;
     background-color: rgba(158, 189, 199, 0.288);
     align-items: center;
@@ -1543,7 +1575,6 @@ a.lightbox-close {
     flex-direction: column;
     justify-content: flex-end; }
   .fotoscroll__container--rojo {
-    padding-bottom: 60%;
     align-items: center;
     align-content: center;
     flex-direction: column;
@@ -1560,8 +1591,7 @@ a.lightbox-close {
     row-gap: 1px;
     grid-template-columns: repeat(3, 105px);
     grid-template-rows: repeat(2, 105px);
-    grid-template-areas: "fotoscroll__img1--celeste fotoscroll__img2--celeste fotoscroll__img3--celeste"
- "fotoscroll__img4--celeste fotoscroll__img5--celeste ."; }
+    grid-template-areas: "fotoscroll__img1--celeste fotoscroll__img2--celeste fotoscroll__img3--celeste" "fotoscroll__img4--celeste fotoscroll__img5--celeste ."; }
   .tapa {
     width: 105px;
     height: 105px; }
@@ -1582,7 +1612,15 @@ a.lightbox-close {
   .fotoscroll__img--forma {
     border-radius: 5px;
     background: #e0e0e0;
-    box-shadow: none; } }
+    box-shadow: none; }
+  .box-fotos {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+  .boxceles {
+    width: 100%;
+    height: 80%; } }
 
 @media all and (min-width: 740px) {
   @keyframes orbita1 {

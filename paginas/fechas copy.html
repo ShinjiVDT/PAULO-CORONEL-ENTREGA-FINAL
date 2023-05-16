@@ -45,34 +45,39 @@
         </div>
     </header>
     <main class="bg-fechas">
-        <div class="scrolling-wrapper row flex-row flex-nowrap scrolling-num container-lg ">
+
+        <div class="scrolling-wrapper row flex-row flex-nowrap scrolling-num container-lg btn-group-toggle" role="group"
+            aria-label="Basic outlined example">
+
+
             <div class="swipeside swipeside--fechas-position ">
                 <img class="swipeside__img" src="../recursos/Icons/swipe.png" alt="">
             </div>
-            <div class="col">
-                <div class="calendario calendario--animacion1">
-                    <a class="calendario__link" href="#f1">
+            <a href="#f1" class="col">
+                <div class="calendario calendario__link">
+                    <div>
                         <div class="calendario__box">
                             <span class="calendario__mes">Abril</span>
                             <span class="calendario__dia">Sab</span>
                             <span class="calendario__ndia">28</span>
                         </div>
-                    </a>
+                    </div>
                 </div>
-            </div>
-            <div class="col ">
-                <div class="calendario calendario--animacion2">
-                    <a class="calendario__link" href="#f2">
-                        <div class="calendario__box">
-                            <span class="calendario__mes">Mayo</span>
-                            <span class="calendario__dia">vie</span>
-                            <span class="calendario__ndia">19</span>
-                        </div>
-                    </a>
-                </div>
+            </a>
+            <div class="col">
+
+                <a class="calendario calendario__link" href="#f2">
+
+                    <div class="calendario__box">
+                        <span class="calendario__mes">Mayo</span>
+                        <span class="calendario__dia">vie</span>
+                        <span class="calendario__ndia">19</span>
+
+                    </div>
+                </a>
             </div>
             <div class="col  ">
-                <div class="calendario calendario--animacion3">
+                <div class="calendario">
                     <a class="calendario__link" href="#f3">
                         <div class="calendario__box">
                             <span class="calendario__mes">Abril</span>
@@ -82,7 +87,17 @@
                     </a>
                 </div>
             </div>
-       
+            <div class="col ">
+                <div class="calendario">
+                    <a class="calendario__link" href="#f4">
+                        <div class="calendario__box">
+                            <span class="calendario__mes">Junio</span>
+                            <span class="calendario__dia">Sab</span>
+                            <span class="calendario__ndia">19</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
         <section class=" row flex-column flex-nowrap  scrolling-flyer-map  g-1">
             <div id="f1" class="row row--style">
@@ -166,6 +181,11 @@
                 $('.animated-icon1').toggleClass('open');
             });
         });
+    </script>
+    <script>
+        function relocate_home() {
+            location.href = "#f1";
+        } 
     </script>
 </body>
 

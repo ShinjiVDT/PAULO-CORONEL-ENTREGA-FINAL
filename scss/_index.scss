@@ -1,6 +1,7 @@
 
 .desktop {
     visibility: visible;
+    
   }
   
   .mobile {
@@ -428,6 +429,7 @@
     
       .desktop {
         visibility: hidden;
+        display: none;
       }
     
       .index-bg-movil {
