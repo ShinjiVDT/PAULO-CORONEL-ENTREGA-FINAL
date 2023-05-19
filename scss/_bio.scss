@@ -49,6 +49,10 @@
     display: none;
 }
 
+.swipedown{
+    display: none;
+}
+
 /*TEXTOBIO*/
 
 .bioscroll__texto {
@@ -106,4 +110,10 @@
         align-items: center;
     }
 
+    .swipedown{
+        display: block;
+        &--bio-position{
+            right: 20px;
+        }
+}
 }
