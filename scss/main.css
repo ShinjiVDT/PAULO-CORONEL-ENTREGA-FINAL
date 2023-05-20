@@ -137,9 +137,9 @@
 
 .hamburger--position {
   position: absolute;
-  top: 10px;
+  top: 40px;
   left: 28px;
-  padding: 0;
+  margin: 80px;
 }
 
 .hamburger--glow {

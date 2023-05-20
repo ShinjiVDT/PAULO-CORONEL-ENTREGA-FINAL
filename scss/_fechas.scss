@@ -4,14 +4,13 @@
   margin: 0px auto 80px auto;
   height: 80%;
   width: 35%;
- background: map-get($colors, "celeste");
- border-radius: 15px;
- box-shadow: $shadow;
+  background: map-get($colors, "celeste");
+  border-radius: 15px;
+  box-shadow: $shadow;
 }
 
 .row--style3 {
   margin: 0px auto 100px auto;
-
 }
 
 .bg-fechas {
@@ -25,12 +24,12 @@
 
 .scrolling-num {
   width: 100vh;
-  
+
   overflow-x: auto;
   overflow-y: hidden;
   z-index: 1;
   padding: 20px 50px 20px 50px;
-  scroll-snap-align: center ;
+  scroll-snap-align: center;
   scrollbar-width: none;
 
   &::-webkit-scrollbar {
@@ -40,7 +39,6 @@
 }
 
 .scrolling-flyer-map {
-
   @include sizes(80%, 100%);
   margin-top: 40px;
   scroll-behavior: smooth;
@@ -81,32 +79,35 @@
 
 .flyer--border {
   box-shadow: $shadow;
+
   &:hover {
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(235, 132, 225, 0.56);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(235, 132, 225, 0.56);
-    box-shadow: 0px 0px 10px 0px rgba(235, 132, 225, 0.56);  }
+    box-shadow: 0px 0px 10px 0px rgba(235, 132, 225, 0.56);
+  }
 }
 
 /*flyer grandes*/
 #f1:not(:target) {
-	display: none;
+  display: none;
 }
+
 #f1:target {
-	display: block;
+  display: block;
 }
 
 #f2:not(:target) {
-	display: none;
+  display: none;
 }
+
 #f2:target {
-	display: block;
+  display: block;
 }
 
 #f3:not(:target) {
-	display: none;
+  display: none;
 }
+
 #f3:target {
-	display: block;
+  display: block;
 }
 
 
@@ -124,7 +125,7 @@
   flex-direction: column;
   justify-content: center;
 
-  img {
+  &__img {
     width: 0%;
     height: 0%;
     padding: 0;
@@ -145,22 +146,24 @@
       max-width: 500px;
       max-height: 500px;
       border-radius: 24px;
-      box-shadow:$shadowfullscreen; 
+      box-shadow: $shadowfullscreen;
       border: 1px solid rgba(255, 255, 255, 0.925);
     }
   }
+
+  &__lightbox-close {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+  }
 }
 
-.flyer-fullscreen__lightbox-close {
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: auto;
-  height: auto;
-}
+
 
 /*--calendario--*/
 
@@ -171,78 +174,96 @@
   opacity: .8;
   margin-left: 10px;
   animation: bounce2 2s ease forwards;
- 
 
-  .calendario__box {
+  &__box {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background: rgba(235, 230, 230, 0.8);
     backdrop-filter: blur(15px);
-    border-bottom: 2px solid  map-get($colors, "celeste");
-    border-right: 1px solid  map-get($colors, "celeste");;
+    border-bottom: 2px solid map-get($colors, "celeste");
+    border-right: 1px solid map-get($colors, "celeste");
     border-radius: 8px;
     box-shadow: 0 5px 25px rgba(180, 133, 155, 0.8);
+  }
 
-    .calendario__mes {
-      color: #333030;
-      background: map-get($colors, "celeste");
-      width: 100%;
-      font-size: 1em;
-      text-align: center;
-      font-weight: 400;
-      padding: 5px 0;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-    }
+  &__mes {
+    color: #333030;
+    background: map-get($colors, "celeste");
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 400;
+    padding: 5px 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
 
-    .calendario__dia {
-      color: #333030;
-      font-size: 1em;
-      font-weight: 400;
-      margin-top: 0px;
-    }
+  &__dia {
+    color: #333030;
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: 0px;
+  }
 
-    .calendario__ndia {
-      color: #333030;
-      font-size: 2em;
-      font-weight: 600;
-      line-height: 1.2em;
-    }
+  &__ndia {
+    color: #333030;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.2em;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+
+  &--animacion2 {
+    animation-delay: .2s;
+  }
+
+  &--animacion3 {
+    animation-delay: .3s;
+  }
+
+  &--animacion4 {
+    animation-delay: .4s;
+  }
+
+  &:hover {
+    transform: translateY(2px);
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(235, 132, 225, 0.56);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(235, 132, 225, 0.56);
+    box-shadow: 0px 0px 10px 0px rgba(235, 132, 225, 0.56);
   }
 }
+
+
 @keyframes bounce2 {
-  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-  40% {transform: translateY(-30px);}
-  60% {transform: translateY(-15px);}
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
-.calendario__link {
-  text-decoration: none;
-}
 
-
-.calendario--animacion2{
-  animation-delay: .2s;
-}
-.calendario--animacion3{
-  animation-delay: .3s;
-}
-.calendario--animacion4{
-  animation-delay: .4s;
-}
-
-.calendario:hover {
-  transform: translateY(2px);
-  opacity: 1;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(235, 132, 225, 0.56);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(235, 132, 225, 0.56);
-  box-shadow: 0px 0px 10px 0px rgba(235, 132, 225, 0.56);
-}
-.swipeside--fechas-position{ 
+.swipeside--fechas-position {
   visibility: hidden;
-}  
+}
 
 /*MEDIA QUERY FECHA*/
 
@@ -263,61 +284,58 @@
     padding: 50px auto 50px auto;
     height: 85%;
     width: 75%;
-   background: map-get($colors, "celeste");
-   border-radius: 15px;
-   box-shadow:none;
-  
+    background: map-get($colors, "celeste");
+    border-radius: 15px;
+    box-shadow: none;
+
   }
+
   .scrolling-flyer-map {
 
     @include sizes(65%, 100%);
     scroll-behavior: smooth;
     margin: 0px auto 0 auto;
     padding: 20px 0 20px 0;
-    scroll-snap-type:  y mandatory;
+    scroll-snap-type: y mandatory;
     overflow-y: hidden;
     scrollbar-width: none;
     scroll-behavior: smooth;
     scroll-snap-align: center;
-   
+
+    &__content {
+
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
   }
 
-  .scrolling-flyer-map__content {
-    
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-  }
-
-  .flyer--margin {
-    margin-top: 30px;
-    margin-bottom: 15px;
-  }
 
   .flyer {
     max-height: 180px;
     max-width: 250px;
     margin-top: 15px;
+
+    &--margin {
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
   }
 
 
-.swipeside{
-  &--fechas-position{
-     left: calc(50% - 17px);
-    
-    top: 160px;
-    z-index: 9999;
-    visibility: visible;
-}
-}
+  .calendario {
+    &__box {
+      box-shadow: 0 2px 15px rgba(180, 133, 155, 0.4);
+    }
+  }
 
-.calendario {
-  .calendario__box {
-
-    box-shadow: 0 2px 15px rgba(180, 133, 155, 0.4);
+  .swipeside {
+    &--fechas-position {
+      left: calc(50% - 17px);
+      top: 160px;
+      z-index: 9999;
+      visibility: visible;
+    }
   }
 }
-}
-
-
